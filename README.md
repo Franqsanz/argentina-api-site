@@ -1,2 +1,3 @@
 # Provinces Argentina API Site PWA
-Sitio web de provincias argentina api
+
+Sitio web oficial, este sitio es una PWA (Aplicación Web Progresiva)
