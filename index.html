@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Provincias Argentina API, población, fundación, fundador, Coordeanadas y rango">
+    <meta name="description"
+        content="Provincias Argentina API, todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
+    <meta name="author" content="Franco Andrés Sánchez">
 
+    <meta property="og:type" content="article">
     <meta property="og:title" content="Provincias Argentina API">
+    <!-- <meta property="og:url" content="">  -->
     <meta property="og:site_name" content="Provinces Argentina API">
+    <meta property="og:locale" content="es_AR">
     <meta property="og:description"
-        content="Provincias Argentina API, población, fundación, fundador, Coordeanadas y rango">
-    <!-- <meta property="og:image" content="../images/franqsanz-dev-logo.png"> -->
+        content="Provincias Argentina API, todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
+    <meta property="og:image" content="./icon/icon.png">
 
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Franqsanz">
     <meta name="twitter:title" content="Provincias Argentina API">
-    <!-- <meta name="twitter:creator" content="Provincias Argentina API"> -->
+    <meta name="twitter:creator" content="Franco Andrés Sánchez">
+    <!-- <meta name="twitter:url" content=""> -->
     <meta name="twitter:description"
-        content="Provincias Argentina API, población, fundación, fundador, Coordeanadas y rango">
-    <!-- <meta name="twitter:image:src" content="../images/icon/icon-57-57.png"> -->
-    <meta name="theme-color" content="#ffc600">
+        content="Provincias Argentina API, todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
+    <!-- <meta name="twitter:image" content="../images/icon/icon-57-57.png"> -->
 
-    <meta name="author" content="Franco Andrés Sánchez">
-    <link rel="apple-touch-icon" href="/favicon.svg">
+    <meta name="theme-color" content="#ffc600">
+    <link rel="apple-touch-icon" sizes="267x267" href="./icon/icon.png">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="icon" href="/icon.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./icon/favicon.ico" type="image/x-ico">
     <title>Provincias Argentina API</title>
 </head>
 
@@ -46,12 +52,14 @@
                 <li class="liNav">
                     <a href="#acercade" class="aNav">Acerca de</a>
                 </li>
+                <li class="liNav">
+                    <div class="iconGithub">
+                        <a href="https://github.com/Franqsanz/provinces-argentina-api" rel="noopener">
+                            <img src="./icon/github.svg" alt="GitHub" class="imgGithub">
+                        </a>
+                    </div>
+                </li>
             </ul>
-            <div class="iconGithub">
-                <a href="https://github.com/Franqsanz/provinces-argentina-api" rel="noopener">
-                    <img src="./icon/github.svg" alt="GitHub" class="imgGithub">
-                </a>
-            </div>
         </nav>
     </header>
     <div class="logo">
@@ -88,7 +96,7 @@
         </p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/</code></pre>
         <pre data-lang="JSON"><code class="codeSample">{
-    "provinces": "http://localhost:33528/api/v1/provinces/"
+    "provinces": <span class="codeJson">"http://localhost:33528/api/v1/provinces/"</span>
 }</code></pre>
         <p>
             Actualmente hay un recurso disponible.
@@ -110,28 +118,28 @@
         <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
-        "_id": 1,
-        "capitalCity": "La Plata",
-        "rank": 1,
-        "latitude": -31.4217247,
-        "longitude": -64.1858136,
-        "populations": "15771581",
-        "province": "Buenos Aires",
-        "foundation": 1882,
-        "founder": "Dardo Rocha"
+        "_id": <span class="codeJsonNumber">1</span>,
+        "capital": <span class="codeJson">"La Plata</span>",
+        "rank": <span class="codeJsonNumber">1</span>,
+        "latitude": <span class="codeJsonNumber">-31.4217247</span>,
+        "longitude": <span class="codeJsonNumber">-64.1858136</span>,
+        "populations": <span class="codeJson">"15771581"</span>,
+        "province": <span class="codeJson">"Buenos Aires"</span>,
+        "foundation": <span class="codeJsonNumber">1882</span>,
+        "founder": <span class="codeJson">"Dardo Rocha"</span>
     },
     {
-        "_id": 2,
-        "capitalCity": "Córdoba",
-        "rank": 2,
-        "latitude": -31.4217247,
-        "longitude": -64.1858136,
-        "populations": "3384649",
-        "province": "Córdoba",
-        "foundation": 1573,
-        "founder": "Jerónimo Luis de Cabrera"
+        "_id": <span class="codeJsonNumber">2</span>,
+        "capital": <span class="codeJson">"Córdoba"</span>,
+        "rank": <span class="codeJsonNumber">2</span>,
+        "latitude": <span class="codeJsonNumber">-31.4217247</span>,
+        "longitude": <span class="codeJsonNumber">-64.1858136</span>,
+        "populations": <span class="codeJson">"3384649"</span>,
+        "province": <span class="codeJson">"Córdoba"</span>,
+        "foundation": <span class="codeJsonNumber">1573</span>,
+        "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>
     },
-    // ...
+    <span class="codeComment">// ...</span>
 ]</code></pre>
         <h1 class="titleHeader">Consigue una sola provincia</h1>
         <p>
@@ -141,15 +149,15 @@
         <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/2</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
-        "_id": 2,
-        "capitalCity": "Córdoba",
-        "rank": 2,
-        "latitude": -31.4217247,
-        "longitude": -64.1858136,
-        "populations": "3384649",
-        "province": "Córdoba",
-        "foundation": 1573,
-        "founder": "Jerónimo Luis de Cabrera"
+        "_id": <span class="codeJsonNumber">2</span>,
+        "capital": <span class="codeJson">"Córdoba"</span>,
+        "rank": <span class="codeJsonNumber">2</span>,
+        "latitude": <span class="codeJsonNumber">-31.4217247</span>,
+        "longitude": <span class="codeJsonNumber">-64.1858136</span>,
+        "populations": <span class="codeJson">"3384649"</span>,
+        "province": <span class="codeJson">"Córdoba"</span>,
+        "foundation": <span class="codeJsonNumber">1573</span>,
+        "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>
     }
 ]</code></pre>
         <h3>GraphQL</h3>
@@ -160,23 +168,23 @@
         <p>
             Sample Query:
         </p>
-        <pre data-lang="GraphQL"><code class="codeSample">query {
+        <pre data-lang="GraphQL"><code class="codeSample"><span class="codeJson">query</span> {
     provinces {
         _id
         province
         foundation
         founder
     }
-    province(id: 5) {
+    province(<span class="codeJson">id</span>: <span class="codeJsonNumber">5</span>) {
         _id
-        capitalCity
+        capital
         province
         founder
     }
 }
 </code></pre>
         <div class="highlight">
-            ¿Qué es <a href="https://graphql.org/" class="aLinkSources" rel="noopener">GraphQL</a>?
+            ¿Qué es <a href="https://graphql.org/learn/" class="aLinkSources" rel="noopener">GraphQL</a>?
         </div>
     </div>
     <div class="contentAbout">
@@ -228,8 +236,8 @@
                 class="aLink">Franqsanz</a>
         </div>
     </footer>
-    <script defer src="./js/index.js"></script>
-    <script defer src="./js/event.js"></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/event.js" defer></script>
 </body>
 
 </html>

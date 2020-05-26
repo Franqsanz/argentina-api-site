@@ -1,0 +1,23 @@
+{
+  "name": "Provincias Argentina API",
+  "short_name": "Provincias Argentina API",
+  "description": "Una api con los datos de cada provincia de argentina.",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./icon/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-ico"
+    },
+    {
+      "src": "./icon/icon.png",
+      "type": "image/png",
+      "size": "267x267"
+    }
+  ],
+  "lang": "es-AR",
+  "start_url": "/",
+  "background_color": "#222222",
+  "theme_color": "#ffd103",
+  "scope": "/"
+}

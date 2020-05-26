@@ -29,12 +29,12 @@ function displayProvince() {
             <div class="card">
                 <div class="infoCity"> ${provinceName} </div>
                 <div class="infoPopulation">
-                    <h2>Populations</h2>
+                    <h2>Población</h2>
                     ${numberCommas(province.populations)}
                 </div>
                 <div class="infoProvince">
-                    <h2>Capital City</h2>
-                    ${province.capitalCity}
+                    <h2>Ciudad Capital</h2>
+                    ${province.capital}
                 </div>
                 <div class="infoProvince">
                     <h2>Fundación</h2>
@@ -45,7 +45,7 @@ function displayProvince() {
                     ${numberCommas(province.founder || 'Desconocido')}
                 </div>
                 <div class="infoProvince">
-                    <h2>Coordinates</h2>
+                    <h2>Coordenadas</h2>
                     <ul class="ulCoord">
                         <li class="liCoord">
                             <h2>Latitud:</h2> ${province.latitude}
@@ -56,7 +56,7 @@ function displayProvince() {
                     </ul>
                 </div>
                 <div class="infoRank">
-                    <h2>Rank</h2>
+                    <h2>Rango</h2>
                     ${province.rank}
                 </div>
             </div>
@@ -99,7 +99,7 @@ async function callApi() {
                 </div>
                 <div class="infoProvince">
                     <h2>Ciudad Capital</h2>
-                    ${province.capitalCity}
+                    ${province.capital}
                 </div>
                 <div class="infoProvince">
                 <h2>Fundación</h2>
@@ -139,3 +139,28 @@ async function registerSW() {
         }
     }
 }
+
+// 15771581
+// 3384649
+// 3269134
+// 1780854
+// 1494358
+// 1259903
+// 1243386
+// 1117121
+// 1083740
+// 1021242
+// 883684
+// 698476
+// 685870
+// 650511
+// 573881
+// 553528
+// 515203
+// 445477
+// 378977
+// 343765
+// 328155
+// 276407
+// 132116
+// 3038430
