@@ -17,12 +17,12 @@ body {
   --color-border-card: #d1d1d1;
   --color-textShadow-titles: #bbbbbb;
   --color-background-pre: #1d1d1d;
-  --color-pre: #e4e4e4;
+  --color-pre: #d8d8d8;
   --color-codePSample: #414141;
   --color-background-codePSample: #f8f8f8;
   --color-background-footer: #202020;
   --color-boxShadow-btnFloat: #909090;
-  --color-codeJsonNumber: #ff86eb;
+  --color-codeJsonNumber: #ff8fec;
 
   min-height: 100vh;
   display: flex;
@@ -416,10 +416,10 @@ footer {
 
   .btnNavFloat {
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     text-align: center;
-    font-size: 3.87rem;
+    font-size: 3.25rem;
     font-family: Arial;
     border-radius: 50%;
     background: var(--color-gold);
