@@ -25,13 +25,14 @@
     <!-- <meta name="twitter:url" content=""> -->
     <meta name="twitter:description"
         content="Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
-    <meta name="twitter:image" content="./icon/favicon.ico">
+    <meta name="twitter:image" content="./icon/icon_twitter.png">
 
     <meta name="theme-color" content="#ffc600">
     <link rel="apple-touch-icon" sizes="267x267" href="./icon/icon.png">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="manifest" href="./manifest.json">
+    <link rel="worker" href="./sw.js">
     <link rel="icon" href="./icon/favicon.ico" type="image/x-ico">
     <title>Provincias Argentina API</title>
 </head>
@@ -62,20 +63,16 @@
             </ul>
         </nav>
     </header>
-    <div class="logo">
-        Provincias Argentina API
+    <div class="contentLogo">
+        <div class="logo">
+            Provincias Argentina API
+        </div>
     </div>
-    <div class="description">
-        Aqui encontraras todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas,
-        Población, Año de fundación, Fundador y Rango.
-    </div>
-    <div class="filterSearch" id="provincias">
-        <input type="text" class="search" placeholder="Buscar Provincias">
-    </div>
+    <!-- <div class="contentSearch"></div> -->
     <section></section>
     <div class="contentDocs">
-        <h1 class="title" id="documentacion">Documentación</h1>
-        <h1 class="titleHeader">Introducción</h1>
+        <h1 class="titleHeader" id="documentacion">Documentación</h1>
+        <h1 class="title">Introducción</h1>
         <p>
             Esta documentación lo ayudará a familiarizarse con los recursos de la API de Provincias Argentina y le
             mostrará cómo hacer diferentes consultas.
@@ -106,12 +103,12 @@
                 <b>Provincias</b>: se usa para obtener todas las provincias.
             </li>
         </ul>
-        <h1 class="titleHeader">Provincias</h1>
+        <h1 class="title">Provincias</h1>
         <p>
             Hay un total de <code class="codePSample">23</code> provincias ordenadas por
             <code class="codePSample">id</code>.
         </p>
-        <h1 class="titleHeader">Consigue todas las provincias</h1>
+        <h1 class="title">Consigue todas las provincias</h1>
         <p>
             Puede acceder a la lista de provincias utilizando el endpoint <code class="codePSample">/provinces</code>.
         </p>
@@ -141,7 +138,7 @@
     },
     <span class="codeComment">// ...</span>
 ]</code></pre>
-        <h1 class="titleHeader">Consigue una sola provincia</h1>
+        <h1 class="title">Consigue una sola provincia</h1>
         <p>
             Puede obtener una sola provincia agregando el <code class="codePSample">id</code> como parametro: <code
                 class="codePSample">/provinces/2</code>.
@@ -188,7 +185,7 @@
         </div>
     </div>
     <div class="contentAbout">
-        <h1 class="title" id="acercade">Acerca De</h1>
+        <h1 class="titleHeader" id="acercade">Acerca De</h1>
         <h1 class="titleQuestion">¿Que es esto?</h1>
         <p>
             Provincias Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
@@ -226,9 +223,7 @@
             sitio en <a href="https://www.netlify.com/" class="aLinkSources" rel="noopener">Netlify</a>.
         </p>
     </div>
-    <div class="btnNavFloat">
-        +
-    </div>
+    <div class="btnNavFloat">+</div>
     <footer>
         <div class="infoFooter">
             2020 Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" rel="noopener"
