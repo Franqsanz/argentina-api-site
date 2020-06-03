@@ -15,8 +15,8 @@ html {
   --color-background-card-gray: #222222;
   --color-border-card: #d1d1d1;
   --color-textShadow-titles: #bbbbbb;
-  --color-background-pre: #1d1d1d;
-  --color-pre: #d8d8d8;
+  --color-background-pre: #2a2a2a;
+  --color-pre: #e2e2e2;
   --color-codePSample: #414141;
   --color-background-codePSample: #f8f8f8;
   --color-background-footer: #202020;
@@ -24,6 +24,7 @@ html {
   --color-codeJsonNumber: #ff8fec;
 
   --center: center;
+  --size: 1.1rem;
 }
 
 html,
@@ -38,8 +39,9 @@ body {
 }
 
 ::selection {
-  background: var(--color-gold);
-  color: var(--color-fonts-gray);
+  background: var(--color-fonts-gray);
+  color: var(--color-gold);
+  text-shadow: none;
 }
 
 header {
@@ -57,7 +59,7 @@ header {
 .contentLogo {
   display: flex;
   background: rgb(223, 223, 223);
-  padding: 20rem 0 15rem 0;
+  padding: 17rem 0 15rem 0;
   font-size: 4rem;
   justify-content: var(--center);
 }
@@ -151,12 +153,13 @@ nav {
 }
 
 .load {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  border: 10px inset var(--color-gold);
-  box-shadow: 0 0 10px var(--color-gray-shadow);
-  animation: loading 500ms infinite linear;
+  border: 12px solid var(--color-background-card-gray);
+  border-top: 12px solid var(--color-gold);
+  box-shadow: inset 0 0 10px var(--color-gray-shadow);
+  animation: loading 750ms infinite linear;
   margin: 100px auto;
 }
 
@@ -172,19 +175,25 @@ nav {
 section {
   display: flex;
   flex-wrap: wrap;
-  padding: 90px 20px 20px 20px;
+  padding: 60px 20px 20px 20px;
 }
 
 .card {
   width: 420px;
   text-align: var(--center);
   background: var(--color-white);
-  font-size: 1.1rem;
+  font-size: var(--size);
   font-style: italic;
   margin: 10px auto;
   border-radius: 5px;
   box-shadow: 9px 10px 15px var(--color-gray-shadow);
   overflow: hidden;
+  transition: 0.2s;
+  transform: rotate(0);
+}
+
+.card:hover {
+  transform: rotate(4deg);
 }
 
 .markName {
@@ -266,9 +275,9 @@ h2 {
 .titleHeader,
 .titleQuestion {
   text-align: var(--center);
-  font-size: 2.3rem;
+  font-size: 3.15rem;
   scroll-margin-top: 4.85rem;
-  text-shadow: 0 3px 0 var(--color-textShadow-titles);
+  text-shadow: 0 2px 0 var(--color-textShadow-titles);
 }
 
 .title,
@@ -277,8 +286,8 @@ h2 {
   font-size: 1.7rem;
   background: none;
   text-align: left;
-  padding: 10px;
-  align-self: center;
+  padding: 5px;
+  align-self: var(--center);
 }
 
 .titleHeader {
@@ -288,8 +297,9 @@ h2 {
 
 p {
   width: 80%;
-  align-self: center;
+  align-self: var(--center);
   line-height: 1.9rem;
+  font-size: 1rem;
 }
 
 .technicalThings {
@@ -299,13 +309,13 @@ p {
 h3 {
   width: 80%;
   font-size: 1.7rem;
-  align-self: center;
+  align-self: var(--center);
   margin: 40px 0 0 0;
 }
 
 pre {
   width: 80%;
-  align-self: center;
+  align-self: var(--center);
   background: var(--color-background-pre);
   color: var(--color-pre);
   overflow: auto;
@@ -328,7 +338,7 @@ pre {
   display: block;
   line-height: 1.7rem;
   font-size: 0.9rem;
-  padding: 1.1rem;
+  padding: var(--size);
   overflow: auto;
 }
 
@@ -368,6 +378,18 @@ footer {
   width: 80%;
   margin: auto;
   padding: 40px 0 40px 0;
+}
+
+@media only screen and (max-width: 1125px) {
+  nav {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -423,7 +445,7 @@ footer {
     color: var(--color-background-pre);
 
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     right: 20px;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -455,12 +477,12 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .contentLogo {
-    padding: 15rem 0 10rem 0;
-    font-size: 3.5rem;
+    padding: 10rem 0 10rem 0;
+    font-size: 2.5rem;
   }
 
   .logo {
-    width: 350px;
+    width: 300px;
   }
 
   section {
@@ -491,7 +513,7 @@ footer {
   .search {
     width: 150px;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: var(--size);
     border: 5px solid var(--color-gold);
   }
 
@@ -524,6 +546,10 @@ footer {
 
   pre {
     width: 90%;
+  }
+
+  .titleHeader {
+    font-size: 2rem;
   }
 
   .title,
@@ -573,7 +599,7 @@ footer {
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: var(--size);
   }
 
   .title,

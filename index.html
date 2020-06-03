@@ -69,6 +69,7 @@
         </div>
     </div>
     <!-- <div class="contentSearch"></div> -->
+    <h1 class="titleHeader" id="provincias">Provincias</h1>
     <section></section>
     <div class="contentDocs">
         <h1 class="titleHeader" id="documentacion">Documentación</h1>
@@ -88,38 +89,36 @@
             Todas las respuestas devolverán datos en
             <code class="codePSample">json</code>.
         </p>
-        <p>
-            Sample Request:
-        </p>
+        <p>Sample Request:</p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/</code></pre>
         <pre data-lang="JSON"><code class="codeSample">{
     "provinces": <span class="codeJson">"http://localhost:33528/api/v1/provinces/"</span>
 }</code></pre>
-        <p>
-            Actualmente hay un recurso disponible.
-        </p>
+        <p>Actualmente hay un recurso disponible.</p>
         <ul class="ulResource">
             <li class="liResource">
-                <b>Provincias</b>: se usa para obtener todas las provincias.
+                <b>Provincias</b>: Hay un total de <code class="codePSample">23</code> provincias ordenadas por
+                <code class="codePSample">id</code>.
             </li>
         </ul>
-        <h1 class="title">Provincias</h1>
+        <!-- <h1 class="title">Provincias</h1>
         <p>
             Hay un total de <code class="codePSample">23</code> provincias ordenadas por
             <code class="codePSample">id</code>.
-        </p>
+        </p> -->
         <h1 class="title">Consigue todas las provincias</h1>
         <p>
             Puede acceder a la lista de provincias utilizando el endpoint <code class="codePSample">/provinces</code>.
         </p>
+        <p>Sample Request:</p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
         "_id": <span class="codeJsonNumber">1</span>,
         "capital": <span class="codeJson">"La Plata"</span>,
         "rank": <span class="codeJsonNumber">1</span>,
-        "latitude": <span class="codeJsonNumber">-31.4217247</span>,
-        "longitude": <span class="codeJsonNumber">-64.1858136</span>,
+        "latitude": <span class="codeJsonNumber">-34.92088</span>,
+        "longitude": <span class="codeJsonNumber">-57.949651</span>,
         "populations": <span class="codeJson">"15771581"</span>,
         "province": <span class="codeJson">"Buenos Aires"</span>,
         "foundation": <span class="codeJsonNumber">1882</span>,
@@ -143,6 +142,7 @@
             Puede obtener una sola provincia agregando el <code class="codePSample">id</code> como parametro: <code
                 class="codePSample">/provinces/2</code>.
         </p>
+        <p>Sample Request:</p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/2</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
@@ -157,14 +157,42 @@
         "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>
     }
 ]</code></pre>
+        <h1 class="title">Filtrado de provincias</h1>
+        <p>
+            También puede incluir filtros en la URL incluyendo parámetros de consulta adicionales. Para iniciar el
+            filtrado
+            agregue un <code class="codePSample">?</code>
+            seguido por la consulta <code class="codePSample">Query=valor</code>.
+            Por ejemplo si desea verificar cuantas capitales contienen la letra <code class="codePSample">Y</code>,
+            simplemente agregue <code class="codePSample">?name=y</code>.
+        </p>
+        <p>Parámetros disponibles:</p>
+        <ul class="ulResource">
+            <li class="liResource">
+                <b><code class="codePSample">name</code></b>: filtrado por capital.
+            </li>
+        </ul>
+        <p>Sample Request:</p>
+        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces?name=y</code></pre>
+        <pre data-lang="JSON"><code class="codeSample">[
+    {
+        "_id": <span class="codeJsonNumber">13</span>,
+        "capital": <span class="codeJson">"San Salvador de Jujuy"</span>,
+        "rank": <span class="codeJsonNumber">13</span>,
+        "latitude": <span class="codeJsonNumber">-24.186427</span>,
+        "longitude": <span class="codeJsonNumber">-65.299451</span>,
+        "populations": <span class="codeJson">"685870"</span>,
+        "province": <span class="codeJson">"Jujuy"</span>,
+        "foundation": <span class="codeJsonNumber">1593</span>,
+        "founder": <span class="codeJson">"Francisco de Argañaráz"</span>
+    }
+]</code></pre>
         <h3>GraphQL</h3>
         <p>
             <a href="http://localhost:33528/graphql/" class="aLinkSources" target="_blank"
                 rel="noopener">http://localhost:33528/graphql/</a>
         </p>
-        <p>
-            Sample Query:
-        </p>
+        <p>Sample Query:</p>
         <pre data-lang="GraphQL"><code class="codeSample"><span class="codeJson">query</span> {
     provinces {
         _id
