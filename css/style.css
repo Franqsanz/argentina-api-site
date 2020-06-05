@@ -33,8 +33,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: 'operator mono';
+  font-family: Arial, Helvetica, sans-serif;
   background: var(--color-whitesmoke);
+  color: var(--color-fonts-gray);
   scroll-behavior: smooth;
 }
 
@@ -42,6 +43,16 @@ body {
   background: var(--color-fonts-gray);
   color: var(--color-gold);
   text-shadow: none;
+}
+
+header,
+.logo,
+.card,
+.titleHeader,
+.title,
+h3,
+footer {
+  font-family: 'operator mono';
 }
 
 header {
@@ -68,6 +79,7 @@ header {
   text-align: var(--center);
   transform: rotate(-4deg) scale(1);
   background: var(--color-gold);
+  color: var(--color-black);
   box-shadow: 8px 8px 10px var(--color-boxShadow-logo);
   transition: 0.2s;
 }
@@ -114,7 +126,7 @@ nav {
 }
 
 .aLinkSources {
-  color: var(--color-black);
+  color: var(--color-fonts-gray);
 }
 
 .highlight {
@@ -206,6 +218,7 @@ section {
   padding: 20px;
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--color-black);
 }
 
 .infoPopulation,
@@ -272,16 +285,15 @@ h2 {
 }
 
 .title,
-.titleHeader,
-.titleQuestion {
+.titleHeader {
   text-align: var(--center);
   font-size: 3.15rem;
+  color: var(--color-black);
   scroll-margin-top: 4.85rem;
   text-shadow: 0 2px 0 var(--color-textShadow-titles);
 }
 
-.title,
-.titleQuestion {
+.title {
   width: 80%;
   font-size: 1.7rem;
   background: none;
@@ -311,6 +323,7 @@ h3 {
   font-size: 1.7rem;
   align-self: var(--center);
   margin: 40px 0 0 0;
+  color: var(--color-black);
 }
 
 pre {
@@ -439,7 +452,6 @@ footer {
     height: 60px;
     text-align: var(--center);
     font-size: 3.25rem;
-    font-family: Arial;
     border-radius: 50%;
     background: var(--color-gold);
     color: var(--color-background-pre);
@@ -530,9 +542,10 @@ footer {
   }
 
   .load {
-    width: 50px;
-    height: 50px;
-    border: 6px inset var(--color-gold);
+    width: 40px;
+    height: 40px;
+    border: 6px solid var(--color-background-card-gray);
+    border-top: 6px solid var(--color-gold);
   }
 
   .card {

@@ -89,7 +89,7 @@
             Todas las respuestas devolverán datos en
             <code class="codePSample">json</code>.
         </p>
-        <p>Sample Request:</p>
+        <p>Ejemplo de Respuesta:</p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/</code></pre>
         <pre data-lang="JSON"><code class="codeSample">{
     "provinces": <span class="codeJson">"http://localhost:33528/api/v1/provinces/"</span>
@@ -101,16 +101,11 @@
                 <code class="codePSample">id</code>.
             </li>
         </ul>
-        <!-- <h1 class="title">Provincias</h1>
-        <p>
-            Hay un total de <code class="codePSample">23</code> provincias ordenadas por
-            <code class="codePSample">id</code>.
-        </p> -->
         <h1 class="title">Consigue todas las provincias</h1>
         <p>
             Puede acceder a la lista de provincias utilizando el endpoint <code class="codePSample">/provinces</code>.
         </p>
-        <p>Sample Request:</p>
+        <p>Ejemplo de Respuesta:</p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
@@ -139,10 +134,10 @@
 ]</code></pre>
         <h1 class="title">Consigue una sola provincia</h1>
         <p>
-            Puede obtener una sola provincia agregando el <code class="codePSample">id</code> como parametro: <code
+            Puede obtener una sola provincia agregando el <code class="codePSample">id</code> como parámetro: <code
                 class="codePSample">/provinces/2</code>.
         </p>
-        <p>Sample Request:</p>
+        <p>Ejemplo de Respuesta:</p>
         <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/2</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
@@ -160,20 +155,19 @@
         <h1 class="title">Filtrado de provincias</h1>
         <p>
             También puede incluir filtros en la URL incluyendo parámetros de consulta adicionales. Para iniciar el
-            filtrado
-            agregue un <code class="codePSample">?</code>
+            filtrado agregue un <code class="codePSample">?</code>
             seguido por la consulta <code class="codePSample">Query=valor</code>.
             Por ejemplo si desea verificar cuantas capitales contienen la letra <code class="codePSample">Y</code>,
-            simplemente agregue <code class="codePSample">?name=y</code>.
+            simplemente agregue <code class="codePSample">?capital=y</code>.
         </p>
         <p>Parámetros disponibles:</p>
         <ul class="ulResource">
             <li class="liResource">
-                <b><code class="codePSample">name</code></b>: filtrado por capital.
+                <code class="codePSample">capital</code>: filtrado por capital.
             </li>
         </ul>
-        <p>Sample Request:</p>
-        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces?name=y</code></pre>
+        <p>Ejemplo de Respuesta:</p>
+        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
         "_id": <span class="codeJsonNumber">13</span>,
@@ -192,7 +186,7 @@
             <a href="http://localhost:33528/graphql/" class="aLinkSources" target="_blank"
                 rel="noopener">http://localhost:33528/graphql/</a>
         </p>
-        <p>Sample Query:</p>
+        <p>Ejemplo de Consulta:</p>
         <pre data-lang="GraphQL"><code class="codeSample"><span class="codeJson">query</span> {
     provinces {
         _id
@@ -214,31 +208,31 @@
     </div>
     <div class="contentAbout">
         <h1 class="titleHeader" id="acercade">Acerca De</h1>
-        <h1 class="titleQuestion">¿Que es esto?</h1>
+        <h3>¿Que es esto?</h3>
         <p>
             Provincias Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
             los
             datos de la
             ciudad capital, fundación, fundador, coordenadas, población y rango.
         </p>
-        <h1 class="titleQuestion">¿Quién eres tú?</h1>
+        <h3>¿Quién eres tú?</h3>
         <p>
             Soy <a href="https://twitter.com/franqsanz" class="aLinkSources" rel="noopener">Franco Andrés
                 Sánchez</a>,
             un Desarrollador Web que le gusta crear cosas y saber como funcionan.
         </p>
-        <h1 class="titleQuestion">¿Por qué construiste esto?</h1>
+        <h3>¿Por qué construiste esto?</h3>
         <p>
             Porque estaba interesado en hacer una API con datos de argentina.
         </p>
-        <h1 class="titleQuestion">¿Derechos de autor?</h1>
+        <h3>¿Derechos de autor?</h3>
         <p>
             Esta API es de código abierto y utiliza una <a href="https://www.opensource.org/licenses/mit-license.php"
                 target="_blank" rel="noopener" class="aLinkSources">licencia MIT</a>.
             Puedes contribuir al proyecto en <a href="https://github.com/Franqsanz/provinces-argentina-api"
                 target="_blank" rel="noopener" class="aLinkSources">GitHub</a>!
         </p>
-        <h1 class="titleQuestion">¿Cosas técnicas?</h1>
+        <h3>¿Cosas técnicas?</h3>
         <p class="technicalThings">
             Estoy usando <a href="https://nodejs.org" class="aLinkSources" rel="noopener">Node.js</a> para servir la
             API,
