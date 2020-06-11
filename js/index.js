@@ -91,11 +91,12 @@ async function callApi() {
     //         </div>`
     // contentSearch.innerHTML = filter
 
-    let URI = 'http://localhost:33528/api/v1/provinces';
-    const res = await fetch(URI);
+    let endPoint = 'http://localhost:33528/api/v1/provinces';
+    const res = await fetch(endPoint);
     const data = await res.json();
 
     let html = ''
+
     data.forEach(province => {
         html += `
             <div class="card">
@@ -126,6 +127,10 @@ async function callApi() {
                             <h2>Longitud:</h2> ${province.longitude}
                         </li>
                     </ul>
+                </div>
+                <div class="infoRank">
+                    <h2>Región Geográfica</h2>
+                    ${province.geographic_region}
                 </div>
                 <div class="infoRank">
                     <h2>Rango</h2>

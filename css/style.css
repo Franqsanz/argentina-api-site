@@ -77,15 +77,19 @@ header {
 
 .logo {
   text-align: var(--center);
-  transform: rotate(-4deg) scale(1);
   background: var(--color-gold);
   color: var(--color-black);
   box-shadow: 8px 8px 10px var(--color-boxShadow-logo);
-  transition: 0.2s;
+  animation: logo 5s alternate-reverse infinite linear;
 }
 
-.logo:hover {
-  transform: rotate(4deg) scale(1.3);
+@keyframes logo {
+  0% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
 }
 
 nav {
@@ -141,15 +145,15 @@ nav {
   background: var(--color-background-highlight);
 }
 
-.filterSearch {
+/* .filterSearch {
   width: 300px;
   padding: 15px;
   margin: auto;
   text-align: var(--center);
   scroll-margin-top: 7rem;
-}
+} */
 
-.search {
+/* .search {
   width: 200px;
   padding: 15px;
   border: 7px solid var(--color-gold);
@@ -162,16 +166,16 @@ nav {
 
 .search:focus {
   border: 7px solid var(--color-gray);
-}
+} */
 
 .load {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  border: 12px solid var(--color-background-card-gray);
-  border-top: 12px solid var(--color-gold);
+  border: 10px solid var(--color-background-card-gray);
+  border-top: 10px solid var(--color-gold);
   box-shadow: inset 0 0 10px var(--color-gray-shadow);
-  animation: loading 750ms infinite linear;
+  animation: loading 0.9s infinite linear;
   margin: 100px auto;
 }
 
@@ -191,27 +195,26 @@ section {
 }
 
 .card {
-  width: 420px;
+  width: 415px;
   text-align: var(--center);
-  background: var(--color-white);
+  background: var(--color-background-card-gray);
   font-size: var(--size);
   font-style: italic;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 5px;
   box-shadow: 9px 10px 15px var(--color-gray-shadow);
   overflow: hidden;
   transition: 0.2s;
-  transform: rotate(0);
 }
 
 .card:hover {
-  transform: rotate(4deg);
+  transform: translateY(-20px);
 }
 
-.markName {
+/* .markName {
   background: var(--color-black);
   color: var(--color-white);
-}
+} */
 
 .infoCity {
   background: var(--color-gold);
@@ -270,18 +273,19 @@ h2 {
   text-align: end;
 }
 
-.notData {
+/* .notData {
   margin: auto;
   font-size: 1.9rem;
   color: var(--color-red);
   padding: 50px 0 50px 0;
   text-align: var(--center);
-}
+} */
 
 .contentDocs,
 .contentAbout {
   display: flex;
   flex-direction: column;
+  padding: 2em calc(45% - 457px + 2em);
 }
 
 .title,
@@ -322,7 +326,7 @@ h3 {
   width: 80%;
   font-size: 1.7rem;
   align-self: var(--center);
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   color: var(--color-black);
 }
 
@@ -349,7 +353,7 @@ pre {
 
 .codeSample {
   display: block;
-  line-height: 1.7rem;
+  line-height: 1.32rem;
   font-size: 0.9rem;
   padding: var(--size);
   overflow: auto;
@@ -451,8 +455,9 @@ footer {
     width: 60px;
     height: 60px;
     text-align: var(--center);
-    font-size: 3.25rem;
+    /* font-size: 3rem; */
     border-radius: 50%;
+    border: none;
     background: var(--color-gold);
     color: var(--color-background-pre);
 
@@ -465,10 +470,19 @@ footer {
     transition: 0.2s;
     box-shadow: 0 0 30px 0 var(--color-boxShadow-btnFloat);
     z-index: 99999;
+    outline: none;
+    background-image: url('../icon/plus.svg');
+    background-size: 80% 80%;
+    background-position: center;
   }
 
-  .btnNavFloat:active {
-    outline: 1.2px solid var(--color-gold);
+  .btnNavFloat:focus {
+    outline: 1px solid var(--color-fonts-gray);
+  }
+
+  .iconPlus {
+    width: 35px;
+    height: 35px;
   }
 
   .btnNavFloat.open {
@@ -516,7 +530,7 @@ footer {
     transform: none;
   }
 
-  .filterSearch {
+  /* .filterSearch {
     width: 250px;
     padding: 0;
   }
@@ -534,7 +548,7 @@ footer {
 
   .notData {
     font-size: 1.4rem;
-  }
+  } */
 
   section {
     padding: 50px 0 0 0;
@@ -597,13 +611,13 @@ footer {
     width: 200px;
   }
 
-  .search {
+  /* .search {
     font-size: 1rem;
   }
 
   .notData {
     font-size: 1.2rem;
-  }
+  } */
 
   .infoCity {
     font-size: 1.2rem;

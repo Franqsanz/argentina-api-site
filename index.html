@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-        content="Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
+        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador, Rango y Región Geográfica.">
     <meta name="author" content="Franco Andrés Sánchez">
+    <meta name="image" content="./icon/pa_api.png">
+    <meta name="theme-color" content="#ffc600">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Provincias Argentina API">
-    <!-- <meta property="og:url" content="">  -->
+    <meta property="og:url" content="https://provincesargentinaapi.netlify.app/">
     <meta property="og:site_name" content="Provinces Argentina API">
     <meta property="og:locale" content="es_AR">
     <meta property="og:description"
-        content="Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
-    <meta property="og:image" content="./icon/icon.png">
+        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador, Rango y Región Geográfica.">
+    <meta property="og:image" content="./icon/pa_api.png">
+    <meta property="og:image:width" content="1275">
+    <meta property="og:image:height" content="504">
 
+    <!-- twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="Provincias Argentina API">
     <meta name="twitter:title" content="Provincias Argentina API">
     <meta name="twitter:creator" content="Franco Andrés Sánchez">
     <!-- <meta name="twitter:url" content=""> -->
     <meta name="twitter:description"
-        content="Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador y Rango.">
+        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Año de fundación, Fundador, Rango y Región Geográfica.">
     <meta name="twitter:image" content="./icon/icon_twitter.png">
 
-    <meta name="theme-color" content="#ffc600">
-    <link rel="apple-touch-icon" sizes="267x267" href="./icon/icon.png">
-
+    <link rel="apple-touch-icon" href="./icon/icon.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="manifest" href="./manifest.json">
     <link rel="worker" href="./sw.js">
@@ -64,9 +68,7 @@
         </nav>
     </header>
     <div class="contentLogo">
-        <div class="logo">
-            Provincias Argentina API
-        </div>
+        <span class="logo">Provincias Argentina API</span>
     </div>
     <!-- <div class="contentSearch"></div> -->
     <h1 class="titleHeader" id="provincias">Provincias</h1>
@@ -117,7 +119,8 @@
         "populations": <span class="codeJson">"15771581"</span>,
         "province": <span class="codeJson">"Buenos Aires"</span>,
         "foundation": <span class="codeJsonNumber">1882</span>,
-        "founder": <span class="codeJson">"Dardo Rocha"</span>
+        "founder": <span class="codeJson">"Dardo Rocha"</span>,
+        "geographic_region": <span class="codeJson">"Pampa Húmeda y Seca"</span>
     },
     {
         "_id": <span class="codeJsonNumber">2</span>,
@@ -128,28 +131,30 @@
         "populations": <span class="codeJson">"3384649"</span>,
         "province": <span class="codeJson">"Córdoba"</span>,
         "foundation": <span class="codeJsonNumber">1573</span>,
-        "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>
+        "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>,
+        "geographic_region": <span class="codeJson">"Pampa Húmeda, Sierras Pampeanas y Chaqueña"</span>
     },
     <span class="codeComment">// ...</span>
 ]</code></pre>
         <h1 class="title">Consigue una sola provincia</h1>
         <p>
             Puede obtener una sola provincia agregando el <code class="codePSample">id</code> como parámetro: <code
-                class="codePSample">/provinces/2</code>.
+                class="codePSample">/provinces/20</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/2</code></pre>
+        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/20</code></pre>
         <pre data-lang="JSON"><code class="codeSample">[
     {
-        "_id": <span class="codeJsonNumber">2</span>,
-        "capital": <span class="codeJson">"Córdoba"</span>,
-        "rank": <span class="codeJsonNumber">2</span>,
-        "latitude": <span class="codeJsonNumber">-31.4217247</span>,
-        "longitude": <span class="codeJsonNumber">-64.1858136</span>,
-        "populations": <span class="codeJson">"3384649"</span>,
-        "province": <span class="codeJson">"Córdoba"</span>,
-        "foundation": <span class="codeJsonNumber">1573</span>,
-        "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>
+        "_id": <span class="codeJsonNumber">20</span>,
+        "capital": <span class="codeJson">"La Rioja"</span>,
+        "rank": <span class="codeJsonNumber">20</span>,
+        "latitude": <span class="codeJsonNumber">-29.414796</span>,
+        "longitude": <span class="codeJsonNumber">-66.860263</span>,
+        "populations": <span class="codeJson">"343765"</span>,
+        "province": <span class="codeJson">"La Rioja"</span>,
+        "foundation": <span class="codeJsonNumber">1591</span>,
+        "founder": <span class="codeJson">"Juan Ramírez de Velazco"</span>,
+        "geographic_region": <span class="codeJson">"Cuyo y Sierras Pampeanas"</span>
     }
 ]</code></pre>
         <h1 class="title">Filtrado de provincias</h1>
@@ -178,7 +183,8 @@
         "populations": <span class="codeJson">"685870"</span>,
         "province": <span class="codeJson">"Jujuy"</span>,
         "foundation": <span class="codeJsonNumber">1593</span>,
-        "founder": <span class="codeJson">"Francisco de Argañaráz"</span>
+        "founder": <span class="codeJson">"Francisco de Argañaráz"</span>,
+        "geographic_region": <span class="codeJson">"NOA"</span>
     }
 ]</code></pre>
         <h3>GraphQL</h3>
@@ -213,11 +219,11 @@
             Provincias Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
             los
             datos de la
-            ciudad capital, fundación, fundador, coordenadas, población y rango.
+            ciudad capital, fundación, fundador, coordenadas, población, rango y región geográfica.
         </p>
         <h3>¿Quién eres tú?</h3>
         <p>
-            Soy <a href="https://twitter.com/franqsanz" class="aLinkSources" rel="noopener">Franco Andrés
+            Soy <a href="https://twitter.com/Franqsanz" class="aLinkSources" rel="noopener">Franco Andrés
                 Sánchez</a>,
             un Desarrollador Web que le gusta crear cosas y saber como funcionan.
         </p>
@@ -237,15 +243,14 @@
             Estoy usando <a href="https://nodejs.org" class="aLinkSources" rel="noopener">Node.js</a> para servir la
             API,
             <a href="https://www.mongodb.com" class="aLinkSources" rel="noopener">MongoDB</a> como motor de base de
-            datos.
-            Todos los datos estan
-            formateados en <a href="https://json.org" class="aLinkSources" rel="noopener">json</a>. La API esta
-            alojada
-            en <a href="https://azure.microsoft.com" class="aLinkSources" rel="noopener">Microsoft Azure</a> y este
+            datos. La API esta alojada en <a href="https://azure.microsoft.com" class="aLinkSources"
+                rel="noopener">Microsoft Azure</a> y este
             sitio en <a href="https://www.netlify.com/" class="aLinkSources" rel="noopener">Netlify</a>.
         </p>
     </div>
-    <div class="btnNavFloat">+</div>
+    <button type="button" aria-label="open" class="btnNavFloat">
+        <!-- <span aria-hidden="true" class="plus"></span> -->
+    </button>
     <footer>
         <div class="infoFooter">
             2020 Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" rel="noopener"
