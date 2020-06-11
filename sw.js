@@ -5,7 +5,7 @@ const staticAssets = [
     './css/style.css',
     './icon/github.svg',
     './icon/favicon.ico',
-    // './favicon.svg',
+    './icon/plus.svg',
     './js/index.js',
     './js/event.js',
     './manifest.json'
