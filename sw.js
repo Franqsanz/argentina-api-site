@@ -3,8 +3,11 @@ const staticAssets = [
     './',
     './index.html',
     './css/style.css',
+    './css/font.css',
     './icon/github.svg',
     './icon/favicon.ico',
+    './icon/logo192.png',
+    './icon/logo512.png',
     './icon/plus.svg',
     './js/index.js',
     './js/event.js',
@@ -18,26 +21,34 @@ self.addEventListener('install', (event) => {
     )
 })
 
-self.addEventListener('activate', (event) => event.waitUntil(self.clients.claim()))
+self.addEventListener('activate', (event) => {
+    const newCache = [];
+    newCache.push(cacheName);
+
+    event.waitUntil(
+        caches.keys().then((cacheName) => {
+            Promise.all(
+                cacheName.map((cacheName) => {
+                    if (!newCache.includes(cacheName)) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            )
+        })
+    )
+});
 
 self.addEventListener('fetch', event => {
-    // event.respondWith(caches.open(cacheName)
-    //     .then(cache => cache.match(event.request, { ignoreSearch: true }))
-    //     .then(res => (event.request.cache !== 'only-if-cached' || event.request.mode === 'same-origin') ? (res || fetch(event.request)) : res))
-
     const req = event.request
     const url = new URL(req.url)
 
     if (url.origin === location.origin) {
-        // event.respondWith(cacheFirst(req))
         event.respondWith(
             caches.open(cacheName)
                 .then(cache => cache.match(req, { ignoreSearch: true }))
                 .then(res => (req.cache !== 'only-if-cached' || req.mode === 'same-origin') ? (res || fetch(req)) : res
                 ));
     } else {
-        // event.waitUntil(networkAndCache(req)
-        //     .then(refresh));
         event.respondWith(networkAndCache(req))
     }
 })
@@ -58,19 +69,4 @@ async function networkAndCache(req) {
         const cached = await cache.match(req)
         return cached
     }
-}
-
-function refresh(res) {
-    return self.clients.matchAll()
-        .then((clients) => {
-            clients.forEach((client) => {
-                let message = {
-                    type: 'refresh',
-                    url: res,
-                    eTag: res.headers.get('ETag')
-                };
-
-                client.postMessage(JSON.stringify(message));
-            });
-        });
 }

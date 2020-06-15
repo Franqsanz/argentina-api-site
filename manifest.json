@@ -5,14 +5,19 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "./icon/favicon.ico",
+      "src": "/icon/favicon.ico",
       "sizes": "64x64",
       "type": "image/x-ico"
     },
     {
-      "src": "./icon/icon.png",
-      "type": "image/png",
-      "size": "267x267"
+      "src": "/icon/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "lang": "es-AR",
