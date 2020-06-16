@@ -91,8 +91,8 @@ async function callApi() {
     //         </div>`
     // contentSearch.innerHTML = filter
 
-    let endPoint = 'http://localhost:33528/api/v1/provinces';
-    const res = await fetch(endPoint);
+    let endpoint = 'http://localhost:33528/api/v1/provinces/';
+    const res = await fetch(endpoint);
     const data = await res.json();
 
     let html = ''
@@ -106,8 +106,12 @@ async function callApi() {
                     ${numberCommas(province.populations)}
                 </div>
                 <div class="infoProvince">
-                    <h2>Ciudad Capital</h2>
+                    <h2>Capital</h2>
                     ${province.capital}
+                </div>
+                <div class="infoProvince">
+                <h2>Superficie Km2</h2>
+                    ${numberCommas(province.surface)}
                 </div>
                 <div class="infoProvince">
                 <h2>Fundación</h2>

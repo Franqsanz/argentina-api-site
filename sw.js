@@ -11,6 +11,10 @@ const staticAssets = [
     './icon/plus.svg',
     './js/index.js',
     './js/event.js',
+    './font/operator/OperatorMono-Book.otf',
+    './font/operator/OperatorMono-BookItalic.otf',
+    './font/operator/OperatorMono-Light.otf',
+    './font/operator/OperatorMono-Medium.otf',
     './manifest.json'
 ]
 
