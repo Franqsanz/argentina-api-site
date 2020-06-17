@@ -60,6 +60,10 @@ body {
 header,
 .logo,
 .card,
+.codeSample,
+.codeJson,
+.codeJsonNumber,
+.codeComment,
 .titleHeader,
 .title,
 h3,
@@ -71,6 +75,7 @@ header {
   display: flex;
   border-bottom: 1px solid var(--color-border-bottom);
   width: 100%;
+  flex-wrap: wrap;
   justify-content: flex-end;
   position: fixed;
   font-size: 2.2rem;
@@ -110,7 +115,7 @@ header {
 }
 
 nav {
-  width: 55%;
+  width: 50%;
   margin: 0;
   padding: 0 7px 0 0;
 }
@@ -284,10 +289,9 @@ h2 {
 }
 
 .liNav {
-  width: 25%;
   margin: 0;
   padding: 0;
-  text-align: end;
+  text-align: center;
 }
 
 /* .notData {
@@ -354,14 +358,13 @@ pre {
   background: var(--color-background-pre);
   color: var(--color-pre);
   overflow: auto;
-  font-family: monospace;
   border-radius: 5px;
 }
 
 [data-lang]::before {
   display: flex;
   justify-content: flex-end;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 0.45rem;
   color: var(--color-black);
   font-family: Arial, Helvetica, sans-serif;
@@ -372,7 +375,7 @@ pre {
 .codeSample {
   display: block;
   line-height: 1.35rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: var(--size);
   overflow: auto;
 }
@@ -395,6 +398,13 @@ pre {
 
 .codeComment {
   color: var(--color-gray-comment);
+}
+
+.codeSample,
+.codeJson,
+.codeJsonNumber,
+.codeJsonNumber {
+  font-weight: lighter;
 }
 
 .btnNavFloat {
@@ -494,7 +504,7 @@ footer {
 
   #Capa_1 {
     position: relative;
-    top: 2.5px;
+    top: 2.3px;
   }
 
   .btnNavFloat.open {

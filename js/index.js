@@ -110,7 +110,7 @@ async function callApi() {
                     ${province.capital}
                 </div>
                 <div class="infoProvince">
-                <h2>Superficie Km2</h2>
+                <h2>Superficie Km²</h2>
                     ${numberCommas(province.surface)}
                 </div>
                 <div class="infoProvince">
