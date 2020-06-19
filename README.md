@@ -1,5 +1,5 @@
-# Provinces Argentina API Site PWA
-![Provinces Argentina API](./icon/pa_api.png)
+# Argentina API Site PWA
+![Argentina API](./icon/arg_api.png)
 
 
 > Si encuentras algún error o crees que algo esta mal, no dudes en escribir un [inssue](https://github.com/Franqsanz/provinces-argentina-api/issues). 😊

@@ -1,6 +1,6 @@
 {
-  "name": "Provincias Argentina API",
-  "short_name": "Provincias Argentina API",
+  "name": "Argentina API",
+  "short_name": "Argentina API",
   "description": "Una api con los datos de cada provincia de argentina.",
   "display": "standalone",
   "icons": [

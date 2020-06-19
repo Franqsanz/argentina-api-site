@@ -1,4 +1,4 @@
-const cacheName = 'PWA Provinces Argentina Api'
+const cacheName = 'Argentina Api'
 const staticAssets = [
     './',
     './index.html',
@@ -26,15 +26,17 @@ self.addEventListener('install', (event) => {
 })
 
 self.addEventListener('activate', (event) => {
+    self.clients.claim();
+
     const newCache = [];
     newCache.push(cacheName);
 
     event.waitUntil(
-        caches.keys().then((cacheName) => {
+        caches.keys().then((cache) => {
             Promise.all(
-                cacheName.map((cacheName) => {
-                    if (!newCache.includes(cacheName)) {
-                        return caches.delete(cacheName);
+                cache.map((cache) => {
+                    if (!newCache.includes(cache)) {
+                        return caches.delete(cache);
                     }
                 })
             )

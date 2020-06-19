@@ -75,7 +75,7 @@ function numberCommas(x) {
 // }
 
 // const search = document.querySelector('.search')
-const section = document.querySelector('section')
+const cards = document.querySelector('.contentCards')
 // const contentSearch = document.querySelector('.contentSearch')
 
 // search.addEventListener('change', displayProvince)
@@ -83,7 +83,7 @@ const section = document.querySelector('section')
 
 async function callApi() {
     let load = '<div class="load"></div>'
-    section.innerHTML = load
+    cards.innerHTML = load
 
     // let filter = `
     //         <div class="filterSearch" id="provincias">
@@ -142,7 +142,7 @@ async function callApi() {
                 </div>
             </div>
         `
-        section.innerHTML = html
+        cards.innerHTML = html
     });
 }
 

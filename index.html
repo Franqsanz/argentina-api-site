@@ -9,59 +9,56 @@
     <meta name="description"
         content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
     <meta name="author" content="Franco Andrés Sánchez">
-    <meta name="image" content="./icon/pa_api.png">
     <meta name="theme-color" content="#ffc600">
 
     <!-- twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="Provincias Argentina API">
-    <meta name="twitter:title" content="Provincias Argentina API">
-    <meta name="twitter:creator" content="Franco Andrés Sánchez">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Argentina API">
     <meta name="twitter:url" content="https://provincesargentinaapi.netlify.app/">
-    <meta name="twitter:image" content="./icon/pa_api.png">
+    <meta name="twitter:image" content="https://provincesargentinaapi.netlify.app/icon/logo64.png">
     <meta name="twitter:description"
         content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Provincias Argentina API">
+    <meta property="og:title" content="Argentina API">
     <meta property="og:url" content="https://provincesargentinaapi.netlify.app/">
-    <meta property="og:site_name" content="Provinces Argentina API">
+    <meta property="og:site_name" content="Argentina API">
     <meta property="og:locale" content="es_AR">
     <meta property="og:description"
         content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
-    <meta property="og:image" content="./icon/pa_api.png">
+    <meta property="og:image" content="https://provincesargentinaapi.netlify.app/icon/arg_api.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1275">
-    <meta property="og:image:height" content="504">
+    <meta property="og:image:width" content="1023">
+    <meta property="og:image:height" content="491">
 
-    <link rel="apple-touch-icon" sizes="64x64" href="./icon/icon_twitter.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon/logo57.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="./icon/logo64.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/logo72.png">
     <link rel="apple-touch-icon" sizes="192x192" href="./icon/logo192.png">
-    <link rel="apple-touch-icon" sizes="267x267" href="./icon/icon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="./icon/logo512.png">
+    <link rel="apple-touch-icon" sizes="258x258" href="./icon/logo258.png">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="manifest" href="./manifest.json">
     <link rel="worker" href="./sw.js">
-    <link rel="icon" href="./icon/favicon.ico" type="image/ico">
-    <title>Provincias Argentina API</title>
+
+    <link rel="icon" sizes="32x32" href="./icon/favicon32.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="./icon/favicon.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="./icon/favicon96.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="./icon/favicon.ico" type="image/ico">
+    <title>Argentina API</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="ulNav">
-                <li class="liNav">
-                    <a href="#" class="aNav">Inicio</a>
-                </li>
-                <li class="liNav">
-                    <a href="#provincias" class="aNav">Provincias</a>
-                </li>
-                <li class="liNav">
-                    <a href="#docs" class="aNav">Docs</a>
-                </li>
-                <li class="liNav">
-                    <a href="#acercade" class="aNav">Acerca de</a>
-                </li>
+                <li class="liNav"><a href="#" class="aNav">Inicio</a></li>
+                <li class="liNav"><a href="#provincias" class="aNav">Provincias</a></li>
+                <li class="liNav"><a href="#docs" class="aNav">Docs</a></li>
+                <li class="liNav"><a href="#acercade" class="aNav">Acerca de</a></li>
                 <li class="liNav">
                     <div class="iconGithub">
                         <a href="https://github.com/Franqsanz/provinces-argentina-api" rel="noopener">
@@ -72,20 +69,19 @@
             </ul>
         </nav>
     </header>
-    <div class="contentLogo">
+    <section class="contentLogo">
         <div class="logo">
-            <span class="logoText">Provincias</span>
-            <span class="logoText">Argentina API</span>
+            <span class="logoText">Argentina</span>
+            <span class="logoText">API</span>
         </div>
-    </div>
-    <!-- <div class="contentSearch"></div> -->
+    </section>
     <h1 class="titleHeader" id="provincias">Provincias</h1>
-    <section></section>
-    <div class="contentDocs">
+    <section class="contentCards"></section>
+    <section class="contentDocs">
         <h1 class="titleHeader" id="docs">Documentación</h1>
         <h1 class="title">Introducción</h1>
         <p>
-            Esta documentación lo ayudará a familiarizarse con los recursos de la API de Provincias Argentina y le
+            Esta documentación lo ayudará a familiarizarse con los recursos de la API de Argentina y le
             mostrará cómo hacer diferentes consultas.
         </p>
         <h3>REST</h3>
@@ -223,12 +219,12 @@
         <div class="highlight">
             ¿Qué es <a href="https://graphql.org/learn/" class="aLinkSources" rel="noopener">GraphQL</a>?
         </div>
-    </div>
-    <div class="contentAbout">
+    </section>
+    <section class="contentAbout">
         <h1 class="titleHeader" id="acercade">Acerca De</h1>
         <h3>¿Qué es esto?</h3>
         <p>
-            Provincias Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
+            Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
             los
             datos de la
             ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región
@@ -260,7 +256,7 @@
                 rel="noopener">Microsoft Azure</a> y este
             sitio en <a href="https://www.netlify.com/" class="aLinkSources" rel="noopener">Netlify</a>.
         </p>
-    </div>
+    </section>
     <button type="button" aria-label="open" class="btnNavFloat">
         <svg aria-hidden="true" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
