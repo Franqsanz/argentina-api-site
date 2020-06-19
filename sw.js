@@ -26,8 +26,6 @@ self.addEventListener('install', (event) => {
 })
 
 self.addEventListener('activate', (event) => {
-    self.clients.claim();
-
     const newCache = [];
     newCache.push(cacheName);
 
@@ -40,7 +38,8 @@ self.addEventListener('activate', (event) => {
                     }
                 })
             )
-        })
+        }),
+        self.clients.claim()
     )
 });
 

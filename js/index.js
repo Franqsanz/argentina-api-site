@@ -3,6 +3,16 @@ window.addEventListener('load', () => {
     callApi()
 })
 
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator.serviceWorker.register('./sw.js')
+        } catch (error) {
+            console.log('SW registro fallido')
+        }
+    }
+}
+
 // const provinces = []
 
 // fetch('http://localhost:33528/api/v1/provinces')
@@ -144,14 +154,4 @@ async function callApi() {
         `
         cards.innerHTML = html
     });
-}
-
-async function registerSW() {
-    if ('serviceWorker' in navigator) {
-        try {
-            await navigator.serviceWorker.register('./sw.js')
-        } catch (error) {
-            console.log('SW registro fallido')
-        }
-    }
 }
