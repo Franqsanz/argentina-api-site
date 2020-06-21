@@ -309,8 +309,8 @@ h2 {
   padding: 1em calc(45% - 457px + 2em);
 }
 
-.title,
-.titleHeader {
+.titleHeader,
+.title {
   text-align: var(--center);
   font-size: 3.15rem;
   color: var(--color-black);

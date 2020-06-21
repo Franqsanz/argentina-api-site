@@ -26,20 +26,16 @@ self.addEventListener('install', (event) => {
 })
 
 self.addEventListener('activate', (event) => {
-    const newCache = [];
-    newCache.push(cacheName);
-
     event.waitUntil(
         caches.keys().then((cache) => {
             Promise.all(
-                cache.map((cache) => {
-                    if (!newCache.includes(cache)) {
-                        return caches.delete(cache);
-                    }
+                cache.filter((cache) => {
+                    return cache !== cacheName
+                }).map((cache) => {
+                    return caches.delete(cache);
                 })
             )
-        }),
-        self.clients.claim()
+        }).then(() => self.clients.claim())
     )
 });
 
