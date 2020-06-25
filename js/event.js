@@ -1,3 +1,5 @@
+'use strict';
+
 const btnFloat = document.querySelector('.btnNavFloat');
 const nav = document.querySelector('nav');
 const aNav = document.querySelectorAll('.aNav');
