@@ -111,7 +111,7 @@ async function callApi() {
 
     data.forEach(province => {
         html += `
-            <div class="card">
+            <div class="card fontOperator">
                 <div class="infoCity"> ${province.province} </div>
                 <div class="infoPopulation">
                     <h2>Población</h2>

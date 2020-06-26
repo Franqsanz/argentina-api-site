@@ -57,18 +57,8 @@ body {
   background: var(--color-scroll-thumb);
 }
 
-header,
-.logo,
-.card,
-.codeSample,
-.codeJson,
-.codeJsonNumber,
-.codeComment,
-.titleHeader,
-.title,
-h3,
-footer {
-  font-family: 'operator mono';
+.fontOperator {
+  font-family: operator mono;
 }
 
 header {
@@ -402,7 +392,6 @@ pre {
 
 .codeSample,
 .codeJson,
-.codeJsonNumber,
 .codeJsonNumber {
   font-weight: lighter;
 }

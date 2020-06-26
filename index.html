@@ -13,8 +13,9 @@
 
     <!-- twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="Argentina API">
     <meta name="twitter:title" content="Argentina API">
+    <meta name="twitter:site" content="Argentina API">
+    <meta name="twitter:creator" content="Argentina API">
     <meta name="twitter:url" content="https://argentina-api.netlify.app/">
     <meta name="twitter:image" content="https://argentina-api.netlify.app/icon/logo192.png">
     <meta name="twitter:description"
@@ -54,7 +55,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fontOperator">
         <nav>
             <ul class="ulNav">
                 <li class="liNav"><a href="#" class="aNav">Inicio</a></li>
@@ -63,7 +64,7 @@
                 <li class="liNav"><a href="#acercade" class="aNav">Acerca de</a></li>
                 <li class="liNav">
                     <div class="iconGithub">
-                        <a href="https://github.com/Franqsanz/argentina-api" rel="noopener">
+                        <a href="https://github.com/Franqsanz/argentina-api" title="GitHub" rel="noopener">
                             <img src="./icon/github.svg" alt="GitHub" class="imgGithub">
                         </a>
                     </div>
@@ -72,21 +73,21 @@
         </nav>
     </header>
     <section class="contentLogo">
-        <div class="logo">
+        <div class="logo fontOperator">
             <span class="logoText">Argentina</span>
             <span class="logoText">API</span>
         </div>
     </section>
-    <h1 class="titleHeader" id="provincias">Provincias</h1>
+    <h1 class="titleHeader fontOperator" id="provincias">Provincias</h1>
     <section class="contentCards"></section>
     <section class="contentDocs">
-        <h1 class="titleHeader" id="docs">Documentación</h1>
-        <h1 class="title">Introducción</h1>
+        <h1 class="titleHeader fontOperator" id="docs">Documentación</h1>
+        <h1 class="title fontOperator">Introducción</h1>
         <p>
             Esta documentación lo ayudará a familiarizarse con los recursos de la API de Argentina y le
             mostrará cómo hacer diferentes consultas.
         </p>
-        <h3>REST</h3>
+        <h3 class="fontOperator">REST</h3>
         <p>
             <a href="http://localhost:33528/api/v1/" class="aLinkSources" target="_blank"
                 rel="noopener">http://localhost:33528/api/v1/</a>
@@ -98,8 +99,8 @@
             <code class="codePSample">json</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample">http://localhost:33528/api/v1/</code></pre>
-        <pre data-lang="JSON"><code class="codeSample">{
+        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator">{
     "provinces": <span class="codeJson">"http://localhost:33528/api/v1/provinces/"</span>
 }</code></pre>
         <p>Actualmente hay un recurso disponible.</p>
@@ -110,13 +111,13 @@
                 <code class="codePSample">id</code>
             </li>
         </ul>
-        <h1 class="title">Consigue todas las provincias</h1>
+        <h1 class="title fontOperator">Consigue todas las provincias</h1>
         <p>
             Puede acceder a la lista de provincias utilizando el endpoint <code class="codePSample">/provinces</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/</code></pre>
-        <pre data-lang="JSON"><code class="codeSample">[
+        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/provinces/</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator">[
     {
         "_id": <span class="codeJsonNumber">1</span>,
         "capital": <span class="codeJson">"La Plata"</span>,
@@ -145,14 +146,14 @@
     },
     <span class="codeComment">// ...</span>
 ]</code></pre>
-        <h1 class="title">Consigue una sola provincia</h1>
+        <h1 class="title fontOperator">Consigue una sola provincia</h1>
         <p>
             Puede obtener una sola provincia agregando el <code class="codePSample">id</code> como parámetro: <code
                 class="codePSample">/provinces/20</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces/20</code></pre>
-        <pre data-lang="JSON"><code class="codeSample">[
+        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/provinces/20</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator">[
     {
         "_id": <span class="codeJsonNumber">20</span>,
         "capital": <span class="codeJson">"La Rioja"</span>,
@@ -167,7 +168,7 @@
         "geographic_region": <span class="codeJson">"Cuyo y Sierras Pampeanas"</span>
     }
 ]</code></pre>
-        <h1 class="title">Filtrado de provincias</h1>
+        <h1 class="title fontOperator">Filtrado de provincias</h1>
         <p>
             También puede incluir filtros en la URL incluyendo parámetros de consulta adicionales. Para iniciar el
             filtrado agregue un <code class="codePSample">?</code>
@@ -182,8 +183,8 @@
             </li>
         </ul>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
-        <pre data-lang="JSON"><code class="codeSample">[
+        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator">[
     {
         "_id": <span class="codeJsonNumber">13</span>,
         "capital": <span class="codeJson">"San Salvador de Jujuy"</span>,
@@ -198,13 +199,13 @@
         "geographic_region": <span class="codeJson">"NOA"</span>
     }
 ]</code></pre>
-        <h3>GraphQL</h3>
+        <h3 class="fontOperator">GraphQL</h3>
         <p>
             <a href="http://localhost:33528/graphql/" class="aLinkSources" target="_blank"
                 rel="noopener">http://localhost:33528/graphql/</a>
         </p>
         <p>Ejemplo de Consulta:</p>
-        <pre data-lang="GraphQL"><code class="codeSample"><span class="codeJson">query</span> {
+        <pre data-lang="GraphQL"><code class="codeSample fontOperator"><span class="codeJson">query</span> {
     provinces {
         _id
         province
@@ -224,8 +225,8 @@
         </div>
     </section>
     <section class="contentAbout">
-        <h1 class="titleHeader" id="acercade">Acerca De</h1>
-        <h3>¿Qué es esto?</h3>
+        <h1 class="titleHeader fontOperator" id="acercade">Acerca De</h1>
+        <h3 class="fontOperator">¿Qué es esto?</h3>
         <p>
             Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
             los
@@ -233,24 +234,24 @@
             ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región
             Geográfica.
         </p>
-        <h3>¿Quién eres tú?</h3>
+        <h3 class="fontOperator">¿Quién eres tú?</h3>
         <p>
             Soy <a href="https://twitter.com/Franqsanz" class="aLinkSources" rel="noopener">Franco Andrés
                 Sánchez</a>,
             un Desarrollador Web que le gusta crear cosas y saber como funcionan.
         </p>
-        <h3>¿Por qué construiste esto?</h3>
+        <h3 class="fontOperator">¿Por qué construiste esto?</h3>
         <p>
             Porque estaba interesado en hacer una API con datos de argentina.
         </p>
-        <h3>¿Derechos de autor?</h3>
+        <h3 class="fontOperator">¿Derechos de autor?</h3>
         <p>
             Esta API es de código abierto y utiliza una <a href="https://www.opensource.org/licenses/mit-license.php"
                 target="_blank" rel="noopener" class="aLinkSources">licencia MIT</a>.
             Puedes contribuir al proyecto en <a href="https://github.com/Franqsanz/argentina-api" target="_blank"
                 rel="noopener" class="aLinkSources">GitHub</a>!
         </p>
-        <h3>¿Cosas técnicas?</h3>
+        <h3 class="fontOperator">¿Cosas técnicas?</h3>
         <p class="technicalThings">
             Estoy usando <a href="https://nodejs.org" class="aLinkSources" rel="noopener">Node.js</a> para servir la
             API,
@@ -273,7 +274,7 @@
             </g>
         </svg>
     </button>
-    <footer>
+    <footer class="fontOperator">
         <div class="infoFooter">
             2020 Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" rel="noopener"
                 class="aLink">Franqsanz</a>
