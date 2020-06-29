@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="canonical" href="https://argentina-api.netlify.app/">
     <meta name="description"
         content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
     <meta name="author" content="Franco Andrés Sánchez">
@@ -37,15 +36,19 @@
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/logo57.png">
     <link rel="apple-touch-icon" sizes="64x64" href="/icon/logo64.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/icon/logo72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon/logo144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/logo180.png">
     <link rel="apple-touch-icon" sizes="192x192" href="/icon/logo192.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="/icon/logo512.png">
     <link rel="apple-touch-icon" sizes="258x258" href="/icon/logo258.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/icon/logo512.png">
 
+    <link rel="canonical" href="https://argentina-api.netlify.app/">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="manifest" href="manifest.json">
     <link rel="worker" href="sw.js">
 
+    <link rel="icon" sizes="16x16" href="/icon/favicon16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="/icon/favicon32.png" type="image/png">
     <link rel="icon" sizes="64x64" href="/icon/favicon.png" type="image/png">
     <link rel="icon" sizes="72x72" href="/icon/logo72.png" type="image/png">
@@ -99,9 +102,9 @@
             <code class="codePSample">json</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator">{
-    "provinces": <span class="codeJson">"http://localhost:33528/api/v1/provinces/"</span>
+        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">{
+    "provinces": <span class="codeJson operatorLighter">"http://localhost:33528/api/v1/provinces/"</span>
 }</code></pre>
         <p>Actualmente hay un recurso disponible.</p>
         <ul class="ulResource">
@@ -116,33 +119,33 @@
             Puede acceder a la lista de provincias utilizando el endpoint <code class="codePSample">/provinces</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/provinces/</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator">[
+        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
     {
-        "_id": <span class="codeJsonNumber">1</span>,
-        "capital": <span class="codeJson">"La Plata"</span>,
-        "rank": <span class="codeJsonNumber">1</span>,
-        "latitude": <span class="codeJsonNumber">-34.92088</span>,
-        "longitude": <span class="codeJsonNumber">-57.949651</span>,
-        "populations": <span class="codeJson">"15771581"</span>,
-        "province": <span class="codeJson">"Buenos Aires"</span>,
-        "surface": <span class="codeJson">"307571"</span>,
-        "foundation": <span class="codeJsonNumber">1882</span>,
-        "founder": <span class="codeJson">"Dardo Rocha"</span>,
-        "geographic_region": <span class="codeJson">"Pampa Húmeda y Pampa Seca"</span>
+        "_id": <span class="codeJsonNumber operatorLighter">1</span>,
+        "capital": <span class="codeJson operatorLighter">"La Plata"</span>,
+        "rank": <span class="codeJsonNumber operatorLighter">1</span>,
+        "latitude": <span class="codeJsonNumber operatorLighter">-34.92088</span>,
+        "longitude": <span class="codeJsonNumber operatorLighter">-57.949651</span>,
+        "populations": <span class="codeJson operatorLighter">"15771581"</span>,
+        "province": <span class="codeJson operatorLighter">"Buenos Aires"</span>,
+        "surface": <span class="codeJson operatorLighter">"307571"</span>,
+        "foundation": <span class="codeJsonNumber operatorLighter">1882</span>,
+        "founder": <span class="codeJson operatorLighter">"Dardo Rocha"</span>,
+        "geographic_region": <span class="codeJson operatorLighter">"Pampa Húmeda y Pampa Seca"</span>
     },
     {
-        "_id": <span class="codeJsonNumber">2</span>,
-        "capital": <span class="codeJson">"Córdoba"</span>,
-        "rank": <span class="codeJsonNumber">2</span>,
-        "latitude": <span class="codeJsonNumber">-31.4217247</span>,
-        "longitude": <span class="codeJsonNumber">-64.1858136</span>,
-        "populations": <span class="codeJson">"3384649"</span>,
-        "province": <span class="codeJson">"Córdoba"</span>,
-        "surface": <span class="codeJson">"165321"</span>,
-        "foundation": <span class="codeJsonNumber">1573</span>,
-        "founder": <span class="codeJson">"Jerónimo Luis de Cabrera"</span>,
-        "geographic_region": <span class="codeJson">"Pampa Húmeda, Sierras Pampeanas y Chaqueña"</span>
+        "_id": <span class="codeJsonNumber operatorLighter">2</span>,
+        "capital": <span class="codeJson operatorLighter">"Córdoba"</span>,
+        "rank": <span class="codeJsonNumber operatorLighter">2</span>,
+        "latitude": <span class="codeJsonNumber operatorLighter">-31.4217247</span>,
+        "longitude": <span class="codeJsonNumber operatorLighter">-64.1858136</span>,
+        "populations": <span class="codeJson operatorLighter">"3384649"</span>,
+        "province": <span class="codeJson operatorLighter">"Córdoba"</span>,
+        "surface": <span class="codeJson operatorLighter">"165321"</span>,
+        "foundation": <span class="codeJsonNumber operatorLighter">1573</span>,
+        "founder": <span class="codeJson operatorLighter">"Jerónimo Luis de Cabrera"</span>,
+        "geographic_region": <span class="codeJson operatorLighter">"Pampa Húmeda, Sierras Pampeanas y Chaqueña"</span>
     },
     <span class="codeComment">// ...</span>
 ]</code></pre>
@@ -152,20 +155,20 @@
                 class="codePSample">/provinces/20</code>.
         </p>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/provinces/20</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator">[
+        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/20</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
     {
-        "_id": <span class="codeJsonNumber">20</span>,
-        "capital": <span class="codeJson">"La Rioja"</span>,
-        "rank": <span class="codeJsonNumber">20</span>,
-        "latitude": <span class="codeJsonNumber">-29.414796</span>,
-        "longitude": <span class="codeJsonNumber">-66.860263</span>,
-        "populations": <span class="codeJson">"343765"</span>,
-        "province": <span class="codeJson">"La Rioja"</span>,
-        "surface": <span class="codeJson">"89680"</span>,
-        "foundation": <span class="codeJsonNumber">1591</span>,
-        "founder": <span class="codeJson">"Juan Ramírez de Velazco"</span>,
-        "geographic_region": <span class="codeJson">"Cuyo y Sierras Pampeanas"</span>
+        "_id": <span class="codeJsonNumber operatorLighter">20</span>,
+        "capital": <span class="codeJson operatorLighter">"La Rioja"</span>,
+        "rank": <span class="codeJsonNumber operatorLighter">20</span>,
+        "latitude": <span class="codeJsonNumber operatorLighter">-29.414796</span>,
+        "longitude": <span class="codeJsonNumber operatorLighter">-66.860263</span>,
+        "populations": <span class="codeJson operatorLighter">"343765"</span>,
+        "province": <span class="codeJson operatorLighter">"La Rioja"</span>,
+        "surface": <span class="codeJson operatorLighter">"89680"</span>,
+        "foundation": <span class="codeJsonNumber operatorLighter">1591</span>,
+        "founder": <span class="codeJson operatorLighter">"Juan Ramírez de Velazco"</span>,
+        "geographic_region": <span class="codeJson operatorLighter">"Cuyo y Sierras Pampeanas"</span>
     }
 ]</code></pre>
         <h1 class="title fontOperator">Filtrado de provincias</h1>
@@ -183,20 +186,20 @@
             </li>
         </ul>
         <p>Ejemplo de Respuesta:</p>
-        <pre><code class="codeSample fontOperator">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator">[
+        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
+        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
     {
-        "_id": <span class="codeJsonNumber">13</span>,
-        "capital": <span class="codeJson">"San Salvador de Jujuy"</span>,
-        "rank": <span class="codeJsonNumber">13</span>,
-        "latitude": <span class="codeJsonNumber">-24.186427</span>,
-        "longitude": <span class="codeJsonNumber">-65.299451</span>,
-        "populations": <span class="codeJson">"685870"</span>,
-        "province": <span class="codeJson">"Jujuy"</span>,
-        "surface": <span class="codeJson">"53219"</span>,
-        "foundation": <span class="codeJsonNumber">1593</span>,
-        "founder": <span class="codeJson">"Francisco de Argañaráz"</span>,
-        "geographic_region": <span class="codeJson">"NOA"</span>
+        "_id": <span class="codeJsonNumber operatorLighter">13</span>,
+        "capital": <span class="codeJson operatorLighter">"San Salvador de Jujuy"</span>,
+        "rank": <span class="codeJsonNumber operatorLighter">13</span>,
+        "latitude": <span class="codeJsonNumber operatorLighter">-24.186427</span>,
+        "longitude": <span class="codeJsonNumber operatorLighter">-65.299451</span>,
+        "populations": <span class="codeJson operatorLighter">"685870"</span>,
+        "province": <span class="codeJson operatorLighter">"Jujuy"</span>,
+        "surface": <span class="codeJson operatorLighter">"53219"</span>,
+        "foundation": <span class="codeJsonNumber operatorLighter">1593</span>,
+        "founder": <span class="codeJson operatorLighter">"Francisco de Argañaráz"</span>,
+        "geographic_region": <span class="codeJson operatorLighter">"NOA"</span>
     }
 ]</code></pre>
         <h3 class="fontOperator">GraphQL</h3>
@@ -205,14 +208,14 @@
                 rel="noopener">http://localhost:33528/graphql/</a>
         </p>
         <p>Ejemplo de Consulta:</p>
-        <pre data-lang="GraphQL"><code class="codeSample fontOperator"><span class="codeJson">query</span> {
+        <pre data-lang="GraphQL"><code class="codeSample fontOperator operatorLighter"><span class="codeJson operatorLighter">query</span> {
     provinces {
         _id
         province
         foundation
         founder
     }
-    province(<span class="codeJson">id</span>: <span class="codeJsonNumber">5</span>) {
+    province(<span class="codeJson operatorLighter">id</span>: <span class="codeJsonNumber operatorLighter">5</span>) {
         _id
         capital
         province
@@ -236,7 +239,7 @@
         </p>
         <h3 class="fontOperator">¿Quién eres tú?</h3>
         <p>
-            Soy <a href="https://twitter.com/Franqsanz" class="aLinkSources" rel="noopener">Franco Andrés
+            Soy <a href="https://twitter.com/Franqsanz" class="aLinkSources">Franco Andrés
                 Sánchez</a>,
             un Desarrollador Web que le gusta crear cosas y saber como funcionan.
         </p>
@@ -253,12 +256,14 @@
         </p>
         <h3 class="fontOperator">¿Cosas técnicas?</h3>
         <p class="technicalThings">
-            Estoy usando <a href="https://nodejs.org" class="aLinkSources" rel="noopener">Node.js</a> para servir la
+            Estoy usando <a href="https://nodejs.org" class="aLinkSources" target="_blank" rel="noopener">Node.js</a>
+            para servir la
             API,
-            <a href="https://www.mongodb.com" class="aLinkSources" rel="noopener">MongoDB</a> como motor de base de
-            datos. La API esta alojada en <a href="https://azure.microsoft.com" class="aLinkSources"
+            <a href="https://www.mongodb.com" class="aLinkSources" target="_blank" rel="noopener">MongoDB</a> como motor
+            de base de
+            datos. La API esta alojada en <a href="https://azure.microsoft.com" class="aLinkSources" target="_blank"
                 rel="noopener">Microsoft Azure</a> y este
-            sitio en <a href="https://www.netlify.com/" class="aLinkSources" rel="noopener">Netlify</a>.
+            sitio en <a href="https://www.netlify.com/" class="aLinkSources" target="_blank" rel="noopener">Netlify</a>.
         </p>
     </section>
     <button type="button" aria-label="Abrir Menú" class="btnNavFloat">
@@ -276,8 +281,7 @@
     </button>
     <footer class="fontOperator">
         <div class="infoFooter">
-            2020 Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" rel="noopener"
-                class="aLink">Franqsanz</a>
+            2020 Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" class="aLink">Franqsanz</a>
         </div>
     </footer>
     <script src="./js/index.js" defer></script>

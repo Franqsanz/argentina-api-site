@@ -1,4 +1,4 @@
-html {
+:root {
   --color-scroll-thumb: #a3a3a3ed;
   --color-gold: #ffda09;
   --color-whitesmoke: #ebebeb;
@@ -390,9 +390,7 @@ pre {
   color: var(--color-gray-comment);
 }
 
-.codeSample,
-.codeJson,
-.codeJsonNumber {
+.operatorLighter {
   font-weight: lighter;
 }
 
