@@ -1,21 +1,21 @@
 const cacheName = 'Argentina Api'
 const staticAssets = [
-    './',
-    './index.html',
-    './css/style.css',
-    './css/font.css',
-    './icon/github.svg',
-    './icon/favicon.ico',
-    './icon/logo192.png',
-    './icon/logo512.png',
-    './icon/plus.svg',
-    './js/index.js',
-    './js/event.js',
-    './font/operator/OperatorMono-Book.otf',
-    './font/operator/OperatorMono-BookItalic.otf',
-    './font/operator/OperatorMono-Light.otf',
-    './font/operator/OperatorMono-Medium.otf',
-    './manifest.json'
+    '/',
+    '/index.html',
+    '/css/style.css',
+    '/css/font.css',
+    '/icons/github.svg',
+    '/icons/favicon.ico',
+    '/icons/logo192.png',
+    '/icons/logo512.png',
+    '/icons/plus.svg',
+    '/js/index.js',
+    '/js/event.js',
+    '/font/operator/OperatorMono-Book.otf',
+    '/font/operator/OperatorMono-BookItalic.otf',
+    '/font/operator/OperatorMono-Light.otf',
+    '/font/operator/OperatorMono-Medium.otf',
+    '/manifest.json'
 ]
 
 self.addEventListener('install', (event) => {
