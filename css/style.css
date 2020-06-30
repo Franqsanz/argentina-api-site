@@ -5,7 +5,6 @@
   --color-whitesmoke-transparent: #ebebebf3;
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-red: #ec1212;
   --color-gray: #808080;
   --color-gray-shadow: #888888;
   --color-border-bottom: #c5c5c5;
@@ -25,6 +24,8 @@
   --color-codeJsonNumber: #ff8fec;
   --color-gray-comment: #9c9c9c;
 
+  --font-operator: operator mono;
+  --font-arial: Arial, Helvetica, sans-serif;
   --center: center;
   --size: 1.1rem;
 }
@@ -35,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-arial);
   background: var(--color-whitesmoke);
   color: var(--color-fonts-gray);
   scroll-behavior: smooth;
@@ -58,7 +59,7 @@ body {
 }
 
 .fontOperator {
-  font-family: operator mono;
+  font-family: var(--font-operator);
 }
 
 header {
@@ -157,29 +158,6 @@ nav {
   background: var(--color-background-highlight);
 }
 
-/* .filterSearch {
-  width: 300px;
-  padding: 15px;
-  margin: auto;
-  text-align: var(--center);
-  scroll-margin-top: 7rem;
-} */
-
-/* .search {
-  width: 200px;
-  padding: 15px;
-  border: 7px solid var(--color-gold);
-  border-radius: 5px;
-  outline: none;
-  font-size: 22px;
-  text-align: var(--center);
-  box-shadow: 0 0 3px var(--color-gray);
-}
-
-.search:focus {
-  border: 7px solid var(--color-gray);
-} */
-
 .load {
   width: 60px;
   height: 60px;
@@ -222,11 +200,6 @@ nav {
 .card:hover {
   transform: translateY(-20px);
 }
-
-/* .markName {
-  background: var(--color-black);
-  color: var(--color-white);
-} */
 
 .infoCity {
   background: var(--color-gold);
@@ -283,14 +256,6 @@ h2 {
   padding: 0;
   text-align: center;
 }
-
-/* .notData {
-  margin: auto;
-  font-size: 1.9rem;
-  color: var(--color-red);
-  padding: 50px 0 50px 0;
-  text-align: var(--center);
-} */
 
 .contentDocs,
 .contentAbout {
@@ -547,26 +512,6 @@ footer {
     transform: none;
   }
 
-  /* .filterSearch {
-    width: 250px;
-    padding: 0;
-  }
-
-  .search {
-    width: 150px;
-    padding: 10px;
-    font-size: var(--size);
-    border: 5px solid var(--color-gold);
-  }
-
-  .search:focus {
-    border: 5px solid var(--color-gray);
-  }
-
-  .notData {
-    font-size: 1.4rem;
-  } */
-
   .contentCards {
     padding: 50px 0 0 0;
   }
@@ -630,14 +575,6 @@ footer {
   .logoText {
     line-height: 2.75rem;
   }
-
-  /* .search {
-    font-size: 1rem;
-  }
-
-  .notData {
-    font-size: 1.2rem;
-  } */
 
   .infoCity {
     font-size: 1.2rem;
