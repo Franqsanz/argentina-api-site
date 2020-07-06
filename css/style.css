@@ -21,7 +21,7 @@
   --color-background-codePSample: #f8f8f8;
   --color-background-footer: #202020;
   --color-boxShadow-btnFloat: #909090;
-  --color-codeJsonNumber: #ff8fec;
+  --color-codeJsonNumber: #ff8f4e;
   --color-gray-comment: #9c9c9c;
 
   --font-operator: operator mono;
@@ -116,6 +116,12 @@ nav {
   padding: 5px;
   border-left: 1px solid var(--color-border-github);
 }
+
+/* :is(.aNav, .aLink, .aLinkSources) {
+  text-decoration: none;
+  color: var(--color-white);
+  border-bottom: 3px solid var(--color-gold);
+} */
 
 .aNav,
 .aLink,
@@ -280,6 +286,7 @@ h2 {
   text-align: left;
   padding: 5px;
   align-self: var(--center);
+  margin: 20px 0 0 0;
 }
 
 .titleHeader {
@@ -305,6 +312,25 @@ h3 {
   align-self: var(--center);
   margin: 20px 0 0 0;
   color: var(--color-black);
+}
+
+/* table */
+table {
+  width: 70%;
+  align-self: var(--center);
+  line-height: 1.7rem;
+  margin: 10px 0 0 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+  word-break: keep-all;
+}
+
+tr,
+th,
+td {
+  border: 1px solid var(--color-gray);
+  padding: 6px 13px;
 }
 
 pre {
@@ -560,6 +586,10 @@ footer {
   .infoFooter {
     font-size: 0.75rem;
   }
+
+  table {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -587,5 +617,11 @@ footer {
   .title,
   .titleHeader {
     scroll-margin-top: 1rem;
+  }
+
+  td,
+  th,
+  tr {
+    padding: 0;
   }
 }
