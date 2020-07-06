@@ -11,7 +11,7 @@
   --color-fonts-gray: #292929;
   --color-boxShadow-logo: #bebebe;
   --color-border-github: #c5c5c5;
-  --color-background-highlight: #e2e2e2;
+  --color-background-highlight: #fff1c0;
   --color-background-card-gray: #222222;
   --color-border-card: #d1d1d1;
   --color-textShadow-titles: #bbbbbb;
@@ -154,8 +154,8 @@ nav {
 
 .highlight {
   width: 77%;
-  margin: auto;
-  padding: 15px;
+  align-self: var(--center);
+  padding: 10px;
   border-left: 5px solid var(--color-gold);
   border-radius: 0 5px 5px 0;
   line-height: 1.7rem;
@@ -577,6 +577,10 @@ footer {
 
   p {
     width: 90%;
+  }
+
+  .highlight {
+    width: 83%;
   }
 
   .ulResource {

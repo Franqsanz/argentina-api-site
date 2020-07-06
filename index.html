@@ -98,9 +98,9 @@
         </p>
         <p>
             La URL base contiene información sobre todos los recursos de API disponible. Todas las solicitudes son
-            <code class="codePSample fontOperator">GET</code>.
+            <code class="codePSample fontOperator operatorLighter">GET</code>.
             Todas las respuestas devolverán datos en
-            <code class="codePSample fontOperator">json</code>.
+            <code class="codePSample fontOperator operatorLighter">json</code>.
         </p>
         <p>Ejemplo de Solicitud:</p>
         <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/</code></pre>
@@ -110,10 +110,11 @@
         <p>Actualmente hay un recurso disponible.</p>
         <ul class="ulResource">
             <li class="liResource">
-                <b>Provincias</b>: Hay un total de <code class="codePSample fontOperator">23</code> provincias y la
+                <b>Provincias</b>: Hay un total de <code class="codePSample fontOperator operatorLighter">23</code>
+                provincias y la
                 ciudad autónoma
                 de buenos aires, ordenadas por
-                <code class="codePSample fontOperator">id</code>
+                <code class="codePSample fontOperator operatorLighter">id</code>
             </li>
         </ul>
         <h1 class="title fontOperator">Esquema de provincias</h1>
@@ -185,7 +186,7 @@
         <h1 class="title fontOperator">Consigue todas las provincias</h1>
         <p>
             Puede acceder a la lista de provincias utilizando el endpoint <code
-                class="codePSample fontOperator">/provinces</code>.
+                class="codePSample fontOperator operatorLighter">/provinces</code>.
         </p>
         <p>Ejemplo de Solicitud:</p>
         <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/</code></pre>
@@ -220,8 +221,9 @@
 ]</code></pre>
         <h1 class="title fontOperator">Consigue una sola provincia</h1>
         <p>
-            Puede obtener una sola provincia agregando el <code class="codePSample fontOperator">id</code> como
-            parámetro: <code class="codePSample fontOperator">/provinces/20</code>.
+            Puede obtener una sola provincia agregando el <code
+                class="codePSample fontOperator operatorLighter">id</code> como
+            parámetro: <code class="codePSample fontOperator operatorLighter">/provinces/20</code>.
         </p>
         <p>Ejemplo de Solicitud:</p>
         <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/20</code></pre>
@@ -243,16 +245,16 @@
         <h1 class="title fontOperator">Filtrado de provincias</h1>
         <p>
             También puede incluir filtros en la URL incluyendo parámetros de consulta adicionales. Para iniciar el
-            filtrado agregue un <code class="codePSample fontOperator">?</code>
-            seguido por la consulta <code class="codePSample fontOperator">Query=valor</code>.
+            filtrado agregue un <code class="codePSample fontOperator operatorLighter">?</code>
+            seguido por la consulta <code class="codePSample fontOperator operatorLighter">Query=valor</code>.
             Por ejemplo si desea verificar cuantas capitales contienen la letra <code
-                class="codePSample fontOperator">Y</code>,
-            simplemente agregue <code class="codePSample fontOperator">?capital=y</code>.
+                class="codePSample fontOperator operatorLighter">Y</code>,
+            simplemente agregue <code class="codePSample fontOperator operatorLighter">?capital=y</code>.
         </p>
         <p>Parámetros disponibles:</p>
         <ul class="ulResource">
             <li class="liResource">
-                <code class="codePSample fontOperator">capital</code>: filtrado por capital.
+                <code class="codePSample fontOperator operatorLighter">capital</code>: filtrado por capital.
             </li>
         </ul>
         <p>Ejemplo de Solicitud:</p>
@@ -293,10 +295,10 @@
     }
 }
 </code></pre>
-        <div class="highlight">
+        <p class="highlight">
             ¿Qué es <a href="https://graphql.org/learn/" class="aLinkSources" target="_blank"
                 rel="noopener">GraphQL</a>?
-        </div>
+        </p>
     </section>
     <section class="contentAbout">
         <h1 class="titleHeader fontOperator" id="acercade">Acerca De</h1>
@@ -352,7 +354,7 @@
     </button>
     <footer class="fontOperator">
         <div class="infoFooter">
-            2020 Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" class="aLink">Franqsanz</a>
+            Hecho con ❤ por <a href="https://franqsanzdev.herokuapp.com/" class="aLink">Franqsanz</a>
         </div>
     </footer>
     <script src="/js/index.js" defer></script>
