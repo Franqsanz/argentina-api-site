@@ -321,14 +321,15 @@ table {
   line-height: 1.7rem;
   margin: 10px 0 0 0;
   border-collapse: collapse;
-  border-spacing: 0;
   overflow: auto;
-  word-break: keep-all;
+  border-spacing: 0;
+  word-break: break-word;
 }
 
 tr,
 th,
 td {
+  margin: 0;
   border: 1px solid var(--color-gray);
   padding: 6px 13px;
 }
@@ -592,7 +593,13 @@ footer {
   }
 
   table {
-    width: 90%;
+    width: 93%;
+  }
+
+  tr,
+  th,
+  td {
+    padding: 0 7px 0 7px;
   }
 }
 
