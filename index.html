@@ -14,10 +14,7 @@
     <meta name="application-name" content="Argentina API">
     <meta name="msapplication-TileImage" content="/icons/logo144.png">
     <meta name="msapplication-TileColor" content="#222222">
-    <meta itemprop="name" content="Argentina API">
-    <meta itemprop="description"
-        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
-    <meta itemprop="image" content="https://argentina-api.netlify.app/icons/arg_api.png">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <!-- twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Argentina API">
@@ -39,6 +36,11 @@
     <meta property="og:image:width" content="1023">
     <meta property="og:image:height" content="491">
 
+    <link rel="preload" href="/font/operator/OperatorMono-Book.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/font/operator/OperatorMono-BookItalic.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/font/operator/OperatorMono-Light.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/font/operator/OperatorMono-Medium.otf" as="font" type="font/otf" crossorigin>
+
     <link rel="apple-touch-icon" sizes="57x57" href="/icons/logo57.png">
     <link rel="apple-touch-icon" sizes="64x64" href="/icons/logo64.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/icons/logo72.png">
@@ -50,7 +52,6 @@
 
     <link rel="canonical" href="https://argentina-api.netlify.app/">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="manifest" href="manifest.json">
     <link rel="worker" href="sw.js">
@@ -120,7 +121,7 @@
                 provincias y la
                 ciudad autónoma
                 de buenos aires, ordenadas por
-                <code class="codePSample fontOperator operatorLighter">id</code>
+                <code class="codePSample fontOperator operatorLighter">id</code>.
             </li>
         </ul>
         <h1 class="title fontOperator">Esquema de provincias</h1>
@@ -301,7 +302,7 @@
     }
 }
 </code></pre>
-        <p class="highlight">
+        <p class="highlight fontOperator operatorLighter">
             ¿Qué es <a href="https://graphql.org/learn/" class="aLinkSources" target="_blank"
                 rel="noopener">GraphQL</a>?
         </p>
@@ -313,7 +314,7 @@
             Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
             los
             datos de la
-            ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región
+            Ciudad Capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región
             Geográfica.
         </p>
         <h3 class="fontOperator">¿Quién eres tú?</h3>
@@ -324,7 +325,7 @@
         </p>
         <h3 class="fontOperator">¿Por qué construiste esto?</h3>
         <p>
-            Porque estaba interesado en hacer una API con datos de argentina.
+            Porque estaba interesado en hacer una API.
         </p>
         <h3 class="fontOperator">¿Derechos de autor?</h3>
         <p>
