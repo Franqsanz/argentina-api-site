@@ -1,5 +1,3 @@
-![netlify badge](https://app.netlify.com/sites/Franqsanz/deploys)
-
 # Argentina API Site PWA
 ![Argentina API](/icons/arg_api.png)
 
