@@ -226,7 +226,7 @@ nav {
   font-weight: lighter;
 }
 
-h2 {
+.titleContentCard {
   font-size: 20px;
   margin: 8px;
   color: var(--color-gold);
