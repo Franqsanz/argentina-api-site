@@ -315,23 +315,25 @@ h3 {
 }
 
 /* table */
-table {
-  width: 70%;
-  align-self: var(--center);
-  line-height: 1.7rem;
-  margin: 10px 0 0 0;
-  border-collapse: collapse;
+.contentTable {
+  width: 80%;
   overflow: auto;
+  align-self: var(--center);
+}
+
+table {
+  line-height: 1.7rem;
+  margin: 10px auto;
+  border-collapse: collapse;
   border-spacing: 0;
-  word-break: break-word;
+  word-break: normal;
 }
 
 tr,
 th,
 td {
-  margin: 0;
-  border: 1px solid var(--color-gray);
-  padding: 6px 13px;
+  border-top: 1px solid var(--color-gray);
+  padding: 13px 20px;
 }
 
 pre {
@@ -595,12 +597,6 @@ footer {
   table {
     width: 93%;
   }
-
-  tr,
-  th,
-  td {
-    padding: 0 7px 0 7px;
-  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -628,11 +624,5 @@ footer {
   .title,
   .titleHeader {
     scroll-margin-top: 1rem;
-  }
-
-  td,
-  th,
-  tr {
-    padding: 0;
   }
 }
