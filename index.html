@@ -2,204 +2,204 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Argentina API</title>
-    <meta name="description"
-        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
-    <meta name="author" content="Franco Andrés Sánchez">
-    <meta name="theme-color" content="#ffc600">
-    <meta name="apple-mobile-web-app-title" content="Argentina API">
-    <meta name="application-name" content="Argentina API">
-    <meta name="msapplication-TileImage" content="/icons/logo144.png">
-    <meta name="msapplication-TileColor" content="#222222">
-    <meta name="msapplication-config" content="/icons/browserconfig.xml">
-    <!-- twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Argentina API">
-    <meta name="twitter:site" content="Argentina API">
-    <meta name="twitter:creator" content="Argentina API">
-    <meta name="twitter:url" content="https://argentina-api.netlify.app/">
-    <meta name="twitter:image" content="https://argentina-api.netlify.app/icons/logo192.png">
-    <meta name="twitter:description"
-        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Argentina API">
-    <meta property="og:site_name" content="Argentina API">
-    <meta property="og:url" content="https://argentina-api.netlify.app/">
-    <meta property="og:locale" content="es_AR">
-    <meta property="og:description"
-        content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
-    <meta property="og:image" content="https://argentina-api.netlify.app/icons/arg_api.png">
-    <meta property="og:image:width" content="1023">
-    <meta property="og:image:height" content="491">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Argentina API</title>
+  <meta name="description"
+    content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
+  <meta name="author" content="Franco Andrés Sánchez">
+  <meta name="theme-color" content="#ffc600">
+  <meta name="apple-mobile-web-app-title" content="Argentina API">
+  <meta name="application-name" content="Argentina API">
+  <meta name="msapplication-TileImage" content="/icons/logo144.png">
+  <meta name="msapplication-TileColor" content="#222222">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Argentina API">
+  <meta name="twitter:site" content="Argentina API">
+  <meta name="twitter:creator" content="Argentina API">
+  <meta name="twitter:url" content="https://argentina-api.netlify.app/">
+  <meta name="twitter:image" content="https://argentina-api.netlify.app/icons/logo192.png">
+  <meta name="twitter:description"
+    content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Argentina API">
+  <meta property="og:site_name" content="Argentina API">
+  <meta property="og:url" content="https://argentina-api.netlify.app/">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:description"
+    content="API REST y GraphQL. Todas las provincias de argentina con sus respectivos datos. Ciudad capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región Geográfica.">
+  <meta property="og:image" content="https://argentina-api.netlify.app/icons/arg_api.png">
+  <meta property="og:image:width" content="1023">
+  <meta property="og:image:height" content="491">
 
-    <link rel="preload" href="/font/operator/OperatorMono-Book.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" href="/font/operator/OperatorMono-BookItalic.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" href="/font/operator/OperatorMono-Light.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" href="/font/operator/OperatorMono-Medium.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/font/operator/OperatorMono-Book.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/font/operator/OperatorMono-BookItalic.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/font/operator/OperatorMono-Light.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/font/operator/OperatorMono-Medium.otf" as="font" type="font/otf" crossorigin>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/icons/logo57.png">
-    <link rel="apple-touch-icon" sizes="64x64" href="/icons/logo64.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/icons/logo72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/icons/logo144.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/logo180.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/icons/logo192.png">
-    <link rel="apple-touch-icon" sizes="258x258" href="/icons/logo258.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="/icons/logo512.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/logo57.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="/icons/logo64.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/logo72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/logo144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/logo180.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/logo192.png">
+  <link rel="apple-touch-icon" sizes="258x258" href="/icons/logo258.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/logo512.png">
 
-    <link rel="canonical" href="https://argentina-api.netlify.app/">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="worker" href="sw.js">
+  <link rel="canonical" href="https://argentina-api.netlify.app/">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="worker" href="sw.js">
 
-    <link rel="icon" sizes="16x16" href="/icons/favicon16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="/icons/favicon32.png" type="image/png">
-    <link rel="icon" sizes="64x64" href="/icons/favicon.png" type="image/png">
-    <link rel="icon" sizes="72x72" href="/icons/logo72.png" type="image/png">
-    <link rel="icon" sizes="96x96" href="/icons/favicon96.png" type="image/png">
-    <link rel="alternate icon" sizes="64x64" href="/icons/favicon.ico" type="image/ico">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#ffda09">
+  <link rel="icon" sizes="16x16" href="/icons/favicon16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="/icons/favicon32.png" type="image/png">
+  <link rel="icon" sizes="64x64" href="/icons/favicon.png" type="image/png">
+  <link rel="icon" sizes="72x72" href="/icons/logo72.png" type="image/png">
+  <link rel="icon" sizes="96x96" href="/icons/favicon96.png" type="image/png">
+  <link rel="alternate icon" sizes="64x64" href="/icons/favicon.ico" type="image/ico">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#ffda09">
 </head>
 
 <body>
-    <header class="fontOperator">
-        <nav>
-            <ul class="ulNav">
-                <li class="liNav"><a href="#" class="aNav">Inicio</a></li>
-                <li class="liNav"><a href="#provincias" class="aNav">Provincias</a></li>
-                <li class="liNav"><a href="#docs" class="aNav">Docs</a></li>
-                <li class="liNav"><a href="#acercade" class="aNav">Acerca de</a></li>
-                <li class="liNav">
-                    <div class="iconGithub">
-                        <a href="https://github.com/Franqsanz/argentina-api" title="GitHub">
-                            <img src="/icons/github.svg" alt="GitHub" class="imgGithub">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="contentLogo">
-        <div class="logo fontOperator">
-            <span class="logoText">Argentina</span>
-            <span class="logoText">API</span>
-        </div>
-    </section>
-    <h1 class="titleHeader fontOperator" id="provincias">Provincias</h1>
-    <section class="contentCards"></section>
-    <section class="contentDocs">
-        <h1 class="titleHeader fontOperator" id="docs">Documentación</h1>
-        <h2 class="title fontOperator">Introducción</h2>
-        <p>
-            Esta documentación lo ayudará a familiarizarse con los recursos de la API de Argentina y le
-            mostrará cómo hacer diferentes consultas.
-        </p>
-        <h3 class="fontOperator">REST</h3>
-        <p>
-            <a href="http://localhost:33528/api/v1/" class="aLinkSources" target="_blank"
-                rel="noopener">http://localhost:33528/api/v1/</a>
-        </p>
-        <p>
-            La URL base contiene información sobre todos los recursos de API disponible. Todas las solicitudes son
-            <code class="codePSample fontOperator operatorLighter">GET</code>.
-            Todas las respuestas devolverán datos en
-            <code class="codePSample fontOperator operatorLighter">json</code>.
-        </p>
-        <p>Ejemplo de Solicitud:</p>
-        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">{
+  <header class="fontOperator">
+    <nav>
+      <ul class="ulNav">
+        <li class="liNav"><a href="#" class="aNav">Inicio</a></li>
+        <li class="liNav"><a href="#provincias" class="aNav">Provincias</a></li>
+        <li class="liNav"><a href="#docs" class="aNav">Docs</a></li>
+        <li class="liNav"><a href="#acercade" class="aNav">Acerca de</a></li>
+        <li class="liNav">
+          <div class="iconGithub">
+            <a href="https://github.com/Franqsanz/argentina-api" title="GitHub">
+              <img src="/icons/github.svg" alt="GitHub" class="imgGithub">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="contentLogo">
+    <div class="logo fontOperator">
+      <span class="logoText">Argentina</span>
+      <span class="logoText">API</span>
+    </div>
+  </section>
+  <h1 class="titleHeader fontOperator" id="provincias">Provincias</h1>
+  <section class="contentCards"></section>
+  <section class="contentDocs">
+    <h1 class="titleHeader fontOperator" id="docs">Documentación</h1>
+    <h2 class="title fontOperator">Introducción</h2>
+    <p>
+      Esta documentación lo ayudará a familiarizarse con los recursos de la API de Argentina y le
+      mostrará cómo hacer diferentes consultas.
+    </p>
+    <h3 class="fontOperator">REST</h3>
+    <p>
+      <a href="http://localhost:33528/api/v1/" class="aLinkSources" target="_blank"
+        rel="noopener">http://localhost:33528/api/v1/</a>
+    </p>
+    <p>
+      La URL base contiene información sobre todos los recursos de API disponible. Todas las solicitudes son
+      <code class="codePSample fontOperator operatorLighter">GET</code>.
+      Todas las respuestas devolverán datos en
+      <code class="codePSample fontOperator operatorLighter">json</code>.
+    </p>
+    <p>Ejemplo de Solicitud:</p>
+    <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/</code></pre>
+    <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">{
     "provinces": <span class="codeJson operatorLighter">"http://localhost:33528/api/v1/provinces/"</span>
 }</code></pre>
-        <p>Actualmente hay un recurso disponible.</p>
-        <ul class="ulResource">
-            <li class="liResource">
-                <b>Provincias</b>: Hay un total de <code class="codePSample fontOperator operatorLighter">23</code>
-                provincias y la
-                ciudad autónoma
-                de buenos aires, ordenadas por
-                <code class="codePSample fontOperator operatorLighter">id</code>.
-            </li>
-        </ul>
-        <h2 class="title fontOperator">Esquema de provincias</h2>
-        <p>❗ Todos los campos son requeridos. ❗</p>
-        <div class="contentTable">
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Key</th>
-                        <th>Type</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>_id</td>
-                        <td>Number</td>
-                        <td>ID de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>capital</td>
-                        <td>String</td>
-                        <td>Nombre de la capital</td>
-                    </tr>
-                    <tr>
-                        <td>rank</td>
-                        <td>Number</td>
-                        <td>Rango de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>latitude</td>
-                        <td>Number</td>
-                        <td>Latitud de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>longitude</td>
-                        <td>Number</td>
-                        <td>Longitud de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>populations</td>
-                        <td>String</td>
-                        <td>Población total de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>province</td>
-                        <td>String</td>
-                        <td>Nombre de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>surface</td>
-                        <td>String</td>
-                        <td>Superficie Km² de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>foundation</td>
-                        <td>Number</td>
-                        <td>Año de fundación de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>founder</td>
-                        <td>String</td>
-                        <td>Fundador de la provincia</td>
-                    </tr>
-                    <tr>
-                        <td>geographic_region</td>
-                        <td>String</td>
-                        <td>Región geográfica de la provincia</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h2 class="title fontOperator">Consigue todas las provincias</h2>
-        <p>
-            Puede acceder a la lista de provincias utilizando el endpoint <code
-                class="codePSample fontOperator operatorLighter">/provinces</code>.
-        </p>
-        <p>Ejemplo de Solicitud:</p>
-        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
+    <p>Actualmente hay un recurso disponible.</p>
+    <ul class="ulResource">
+      <li class="liResource">
+        <b>Provincias</b>: Hay un total de <code class="codePSample fontOperator operatorLighter">23</code>
+        provincias y la
+        ciudad autónoma
+        de buenos aires, ordenadas por
+        <code class="codePSample fontOperator operatorLighter">id</code>.
+      </li>
+    </ul>
+    <h2 class="title fontOperator">Esquema de provincias</h2>
+    <p>❗ Todos los campos son requeridos. ❗</p>
+    <div class="contentTable">
+      <table>
+        <tbody>
+          <tr>
+            <th>Key</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>_id</td>
+            <td>Number</td>
+            <td>ID de la provincia</td>
+          </tr>
+          <tr>
+            <td>capital</td>
+            <td>String</td>
+            <td>Nombre de la capital</td>
+          </tr>
+          <tr>
+            <td>rank</td>
+            <td>Number</td>
+            <td>Rango de la provincia</td>
+          </tr>
+          <tr>
+            <td>latitude</td>
+            <td>Number</td>
+            <td>Latitud de la provincia</td>
+          </tr>
+          <tr>
+            <td>longitude</td>
+            <td>Number</td>
+            <td>Longitud de la provincia</td>
+          </tr>
+          <tr>
+            <td>populations</td>
+            <td>String</td>
+            <td>Población total de la provincia</td>
+          </tr>
+          <tr>
+            <td>province</td>
+            <td>String</td>
+            <td>Nombre de la provincia</td>
+          </tr>
+          <tr>
+            <td>surface</td>
+            <td>String</td>
+            <td>Superficie Km² de la provincia</td>
+          </tr>
+          <tr>
+            <td>foundation</td>
+            <td>Number</td>
+            <td>Año de fundación de la provincia</td>
+          </tr>
+          <tr>
+            <td>founder</td>
+            <td>String</td>
+            <td>Fundador de la provincia</td>
+          </tr>
+          <tr>
+            <td>geographic_region</td>
+            <td>String</td>
+            <td>Región geográfica de la provincia</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 class="title fontOperator">Consigue todas las provincias</h2>
+    <p>
+      Puede acceder a la lista de provincias utilizando el endpoint <code
+        class="codePSample fontOperator operatorLighter">/provinces</code>.
+    </p>
+    <p>Ejemplo de Solicitud:</p>
+    <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/</code></pre>
+    <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
     {
         "_id": <span class="codeJsonNumber operatorLighter">1</span>,
         "capital": <span class="codeJson operatorLighter">"La Plata"</span>,
@@ -228,15 +228,15 @@
     },
     <span class="codeComment">// ...</span>
 ]</code></pre>
-        <h2 class="title fontOperator">Consigue una sola provincia</h2>
-        <p>
-            Puede obtener una sola provincia agregando el <code
-                class="codePSample fontOperator operatorLighter">id</code> como
-            parámetro: <code class="codePSample fontOperator operatorLighter">/provinces/20</code>.
-        </p>
-        <p>Ejemplo de Solicitud:</p>
-        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/20</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
+    <h2 class="title fontOperator">Consigue una sola provincia</h2>
+    <p>
+      Puede obtener una sola provincia agregando el <code class="codePSample fontOperator operatorLighter">id</code>
+      como
+      parámetro: <code class="codePSample fontOperator operatorLighter">/provinces/20</code>.
+    </p>
+    <p>Ejemplo de Solicitud:</p>
+    <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces/20</code></pre>
+    <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
     {
         "_id": <span class="codeJsonNumber operatorLighter">20</span>,
         "capital": <span class="codeJson operatorLighter">"La Rioja"</span>,
@@ -251,24 +251,24 @@
         "geographic_region": <span class="codeJson operatorLighter">"Cuyo y Sierras Pampeanas"</span>
     }
 ]</code></pre>
-        <h2 class="title fontOperator">Filtrado de provincias</h2>
-        <p>
-            También puede incluir filtros en la URL incluyendo parámetros de consulta adicionales. Para iniciar el
-            filtrado agregue un <code class="codePSample fontOperator operatorLighter">?</code>
-            seguido por la consulta <code class="codePSample fontOperator operatorLighter">Query=valor</code>.
-            Por ejemplo si desea verificar cuantas capitales contienen la letra <code
-                class="codePSample fontOperator operatorLighter">Y</code>,
-            simplemente agregue <code class="codePSample fontOperator operatorLighter">?capital=y</code>.
-        </p>
-        <p>Parámetros disponibles:</p>
-        <ul class="ulResource">
-            <li class="liResource">
-                <code class="codePSample fontOperator operatorLighter">capital</code>: filtrado por capital.
-            </li>
-        </ul>
-        <p>Ejemplo de Solicitud:</p>
-        <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
-        <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
+    <h2 class="title fontOperator">Filtrado de provincias</h2>
+    <p>
+      También puede incluir filtros en la URL incluyendo parámetros de consulta adicionales. Para iniciar el
+      filtrado agregue un <code class="codePSample fontOperator operatorLighter">?</code>
+      seguido por la consulta <code class="codePSample fontOperator operatorLighter">Query=valor</code>.
+      Por ejemplo si desea verificar cuantas capitales contienen la letra <code
+        class="codePSample fontOperator operatorLighter">Y</code>,
+      simplemente agregue <code class="codePSample fontOperator operatorLighter">?capital=y</code>.
+    </p>
+    <p>Parámetros disponibles:</p>
+    <ul class="ulResource">
+      <li class="liResource">
+        <code class="codePSample fontOperator operatorLighter">capital</code>: filtrado por capital.
+      </li>
+    </ul>
+    <p>Ejemplo de Solicitud:</p>
+    <pre><code class="codeSample fontOperator operatorLighter">http://localhost:33528/api/v1/provinces?capital=y</code></pre>
+    <pre data-lang="JSON"><code class="codeSample fontOperator operatorLighter">[
     {
         "_id": <span class="codeJsonNumber operatorLighter">13</span>,
         "capital": <span class="codeJson operatorLighter">"San Salvador de Jujuy"</span>,
@@ -283,13 +283,13 @@
         "geographic_region": <span class="codeJson operatorLighter">"NOA"</span>
     }
 ]</code></pre>
-        <h3 class="fontOperator">GraphQL</h3>
-        <p>
-            <a href="http://localhost:33528/graphql/" class="aLinkSources" target="_blank"
-                rel="noopener">http://localhost:33528/graphql/</a>
-        </p>
-        <p>Ejemplo de Consulta:</p>
-        <pre data-lang="GraphQL"><code class="codeSample fontOperator operatorLighter"><span class="codeJson operatorLighter">query</span> {
+    <h3 class="fontOperator">GraphQL</h3>
+    <p>
+      <a href="http://localhost:33528/graphql/" class="aLinkSources" target="_blank"
+        rel="noopener">http://localhost:33528/graphql/</a>
+    </p>
+    <p>Ejemplo de Consulta:</p>
+    <pre data-lang="GraphQL"><code class="codeSample fontOperator operatorLighter"><span class="codeJson operatorLighter">query</span> {
     provinces {
         _id
         province
@@ -304,74 +304,73 @@
     }
 }
 </code></pre>
-        <p class="highlight fontOperator operatorLighter">
-            ¿Qué es <a href="https://graphql.org/learn/" class="aLinkSources" target="_blank"
-                rel="noopener">GraphQL</a>?
-        </p>
-    </section>
-    <section class="contentAbout">
-        <h1 class="titleHeader fontOperator" id="acercade">Acerca De</h1>
-        <h3 class="fontOperator">¿Qué es esto?</h3>
-        <p>
-            Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
-            los
-            datos de la
-            Ciudad Capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región
-            Geográfica.
-        </p>
-        <h3 class="fontOperator">¿Quién eres tú?</h3>
-        <p>
-            Soy <a href="https://twitter.com/Franqsanz" class="aLinkSources">Franco Andrés
-                Sánchez</a>,
-            un Desarrollador Web que le gusta crear cosas y saber como funcionan.
-        </p>
-        <h3 class="fontOperator">¿Por qué construiste esto?</h3>
-        <p>
-            Porque estaba interesado en hacer una API.
-        </p>
-        <h3 class="fontOperator">¿Alguna inspiración?</h3>
-        <p>
-            En la API de <a href="https://rickandmortyapi.com/" class="aLinkSources">Rick and Morty</a>.
-        </p>
-        <h3 class="fontOperator">¿Derechos de autor?</h3>
-        <p>
-            Esta API es de código abierto y utiliza una <a href="https://www.opensource.org/licenses/mit-license.php"
-                target="_blank" rel="noopener" class="aLinkSources">licencia MIT</a>.
-            Puedes contribuir al proyecto en <a href="https://github.com/Franqsanz/argentina-api" target="_blank"
-                rel="noopener" class="aLinkSources">GitHub</a>!
-        </p>
-        <h3 class="fontOperator">¿Cosas técnicas?</h3>
-        <p class="technicalThings">
-            Estoy usando <a href="https://nodejs.org" class="aLinkSources" target="_blank" rel="noopener">Node.js</a>
-            para servir la
-            API,
-            <a href="https://www.mongodb.com" class="aLinkSources" target="_blank" rel="noopener">MongoDB</a> como motor
-            de base de
-            datos. La API esta alojada en <a href="https://azure.microsoft.com" class="aLinkSources" target="_blank"
-                rel="noopener">Microsoft Azure</a> y este
-            sitio en <a href="https://www.netlify.com/" class="aLinkSources" target="_blank" rel="noopener">Netlify</a>.
-        </p>
-    </section>
-    <button type="button" aria-label="Abrir Menú" class="btnNavFloat">
-        <svg aria-hidden="true" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
-            viewBox="0 0 459.325 479.325" style="enable-background:new 0 0 25 25;" xml:space="preserve">
-            <g>
-                <path d="M459.319,229.668c0,22.201-17.992,40.193-40.205,40.193H269.85v149.271c0,22.207-17.998,40.199-40.196,40.193
+    <p class="highlight fontOperator operatorLighter">
+      ¿Qué es <a href="https://graphql.org/learn/" class="aLinkSources" target="_blank" rel="noopener">GraphQL</a>?
+    </p>
+  </section>
+  <section class="contentAbout">
+    <h1 class="titleHeader fontOperator" id="acercade">Acerca De</h1>
+    <h3 class="fontOperator">¿Qué es esto?</h3>
+    <p>
+      Argentina API es una API RESTful y GraphQL, basada en los datos del INDEC. Tendrás acceso a
+      los
+      datos de la
+      Ciudad Capital, Coordenadas, Población, Superficie Km², Año de fundación, Fundador, Rango y Región
+      Geográfica.
+    </p>
+    <h3 class="fontOperator">¿Quién eres tú?</h3>
+    <p>
+      Soy <a href="https://twitter.com/Franqsanz" class="aLinkSources">Franco Andrés
+        Sánchez</a>,
+      un Desarrollador Web que le gusta crear cosas y saber como funcionan.
+    </p>
+    <h3 class="fontOperator">¿Por qué construiste esto?</h3>
+    <p>
+      Porque estaba interesado en hacer una API.
+    </p>
+    <h3 class="fontOperator">¿Alguna inspiración?</h3>
+    <p>
+      En la API de <a href="https://rickandmortyapi.com/" class="aLinkSources">Rick and Morty</a>.
+    </p>
+    <h3 class="fontOperator">¿Derechos de autor?</h3>
+    <p>
+      Esta API es de código abierto y utiliza una <a href="https://www.opensource.org/licenses/mit-license.php"
+        target="_blank" rel="noopener" class="aLinkSources">licencia MIT</a>.
+      Puedes contribuir al proyecto en <a href="https://github.com/Franqsanz/argentina-api" target="_blank"
+        rel="noopener" class="aLinkSources">GitHub</a>!
+    </p>
+    <h3 class="fontOperator">¿Cosas técnicas?</h3>
+    <p class="technicalThings">
+      Estoy usando <a href="https://nodejs.org" class="aLinkSources" target="_blank" rel="noopener">Node.js</a>
+      para servir la
+      API,
+      <a href="https://www.mongodb.com" class="aLinkSources" target="_blank" rel="noopener">MongoDB</a> como motor
+      de base de
+      datos. La API esta alojada en <a href="https://azure.microsoft.com" class="aLinkSources" target="_blank"
+        rel="noopener">Microsoft Azure</a> y este
+      sitio en <a href="https://www.netlify.com/" class="aLinkSources" target="_blank" rel="noopener">Netlify</a>.
+    </p>
+  </section>
+  <button type="button" aria-label="Abrir Menú" aria-haspopup="true" aria-expanded="false" class="btnNavFloat">
+    <svg aria-hidden="true" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="23px"
+      viewBox="0 0 459.325 479.325" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+      <g>
+        <path d="M459.319,229.668c0,22.201-17.992,40.193-40.205,40.193H269.85v149.271c0,22.207-17.998,40.199-40.196,40.193
         		c-11.101,0-21.149-4.492-28.416-11.763c-7.276-7.281-11.774-17.324-11.769-28.419l-0.006-149.288H40.181
         		c-11.094,0-21.134-4.492-28.416-11.774c-7.264-7.264-11.759-17.312-11.759-28.413C0,207.471,17.992,189.475,40.202,189.475h149.267
         		V40.202C189.469,17.998,207.471,0,229.671,0c22.192,0.006,40.178,17.986,40.19,40.187v149.288h149.282
         		C441.339,189.487,459.308,207.471,459.319,229.668z" />
-            </g>
-        </svg>
-    </button>
-    <footer class="fontOperator">
-        <div class="infoFooter">
-            Hecho con ❤ por <a href="https://franqsanz.netlify.app/" class="aLink">Franqsanz</a>
-        </div>
-    </footer>
-    <script src="/js/index.js" defer></script>
-    <script src="/js/event.js" defer></script>
+      </g>
+    </svg>
+  </button>
+  <footer class="fontOperator">
+    <div class="infoFooter">
+      Hecho con ❤ por <a href="https://franqsanz.netlify.app/" class="aLink">Franqsanz</a>
+    </div>
+  </footer>
+  <script src="/js/index.js" defer></script>
+  <script src="/js/event.js" defer></script>
 </body>
 
 </html>
